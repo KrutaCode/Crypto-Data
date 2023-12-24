@@ -1,0 +1,9 @@
+{
+    "exchangeName": "sushiswap",
+    "network": "avalanche",
+    "factoryAddress": "0x3e603C14aF37EBdaD31709C4f848Fc6aD5BEc715",
+    "routerAddress": "0xFB7eF66a7e61224DD6FcD0D7d9C3be5C8B049b9f",
+    "pools": {
+
+    }
+}

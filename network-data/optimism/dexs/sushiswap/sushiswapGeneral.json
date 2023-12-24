@@ -1,0 +1,9 @@
+{
+    "exchangeName": "sushiswap",
+    "network": "optimism",
+    "factoryAddress": "0x9c6522117e2ed1fE5bdb72bb0eD5E3f2bdE7DBe0",
+    "routerAddress": "0xFB7eF66a7e61224DD6FcD0D7d9C3be5C8B049b9f",
+    "pools": {
+
+    }
+}

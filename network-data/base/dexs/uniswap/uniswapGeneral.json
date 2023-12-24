@@ -1,0 +1,9 @@
+{
+    "exchangeName": "uniswap",
+    "network": "base",
+    "factoryAddress": "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
+    "routerAddress": "0x198EF79F1F515F02dFE9e3115eD9fC07183f02fC",
+    "pools": {
+
+    }
+}

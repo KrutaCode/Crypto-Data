@@ -1,0 +1,17 @@
+{   
+    "WMATIC": {
+        "MATICX": {
+            "100": "0xcd78A20c597E367A4e478a2411cEB790604D7c8F",
+            "500": "null",
+            "3000": "null",
+            "10000": "null"
+        },
+        "stMATIC": {
+            "100": "0xf0ad209e2e969EAAA8C882aac71f02D8a047d5c2",
+            "500": "null",
+            "3000": "null",
+            "10000": "null"
+        }
+    }
+}
+
