@@ -8,12 +8,21 @@ const axios = require('axios');
 const { ethers } = require('ethers');
 const readFile = util.promisify(fs.readFile);
 
-// Change the path to the directory that this project ("crypto-data") is in.
+// Openzeppelin imports
+const {} = require('@openzeppelin/contracts/token/ERC20/extensions');
+
+// Change the path to the directory that this project ("crypto-data") is located.
 const basePath = 'D:/CryptoData/crypto-data';
 
 // Paths to local files
 const poolPaths = 'network-data/{}/dexs/{}/{}_{}_pools.json';
 
+// Path to token Decimals
+const tokenDecimalsPath = `${basePath}/token-standards/decimals/tokenDecimals.json`;
+// Path to token  ABIs
+const erc20AbiPath = `${basePath}/token-standards/abis/erc20Abi.json`;
+
+// Address representing "null".
 const nullAddress = '0x0000000000000000000000000000000000000000';
 
 // Cases where "Coinmarketcap" uses a different symbol than local storage.
@@ -178,6 +187,16 @@ class DataManager {
      * @param
      * @return
      */
+    async getTokenAbi(token_standard = 'erc20') {
+        if (token_standard == 'erc20') {
+            let jsonData = fs.readFile(erc20AbiPath);
+            jsonData = JSON.parse(jsonData);
+            if (this.verbose) {
+                console.log(`[Token Abi] Retrieved locally`);
+            }
+            return jsonData;
+        }
+    }
 
     /**
      * @notice Get the application binary interface (ABI) for the contract.
@@ -208,7 +227,9 @@ class DataManager {
         let jsonData = await readFile(pathToTokenAddress);
         // console.log(`JSON: ${jsonData}`);
         jsonData = await JSON.parse(jsonData);
-
+        if (this.verbose) {
+            console.log(`[Token Symbol] Retrieved locally`);
+        }
         return Object.keys(jsonData).find(
             (key) => jsonData[key] === _tokenAddress
         );
@@ -230,6 +251,9 @@ class DataManager {
         const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
         let jsonData = await readFile(pathToDex);
         jsonData = await JSON.parse(jsonData);
+        if (this.verbose) {
+            console.log(`[${_dex} Factory Address] Retrieved locally`);
+        }
         return jsonData['factoryAddress'];
     }
     /**
@@ -243,6 +267,9 @@ class DataManager {
         const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
         let jsonData = await readFile(pathToDex);
         jsonData = await JSON.parse(jsonData);
+        if (this.verbose) {
+            console.log(`[${_dex} Factory Abi] Retrieved locally`);
+        }
         return jsonData['factoryAbi'];
     }
     /**
@@ -256,6 +283,9 @@ class DataManager {
         const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
         let jsonData = await readFile(pathToDex);
         jsonData = await JSON.parse(jsonData);
+        if (this.verbose) {
+            console.log(`[${_dex} Router Address] Retrieved locally`);
+        }
         return jsonData['routerAddress'];
     }
     /**
@@ -269,6 +299,9 @@ class DataManager {
         const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
         let jsonData = await readFile(pathToDex);
         jsonData = await JSON.parse(jsonData);
+        if (this.verbose) {
+            console.log(`[${_dex} Router Abi] Retrieved locally`);
+        }
         return jsonData['routerAbi'];
     }
 
@@ -283,22 +316,34 @@ class DataManager {
         const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
         let jsonData = await readFile(pathToDex);
         jsonData = await JSON.parse(jsonData);
+        if (this.verbose) {
+            console.log(`[${_dex} Pool Abi] Retrieved locally`);
+        }
         return jsonData['poolAbi'];
     }
 
+    /**
+     * @description Return the address of the quoter.
+     * @param _dex Name of the decentralized exchange.
+     * @param _chainId Id of the blockchain network.
+     * @return String
+     */
     async getDexQuoterAddress(_dex = 'uniswap', _chainId) {
         const networkName = idToNetworkName[_chainId];
         const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
         let jsonData = await readFile(pathToDex);
         jsonData = await JSON.parse(jsonData);
+        if (this.verbose) {
+            console.log(`[${_dex} Quoter Address] Retrieved locally`);
+        }
         return jsonData['quoterAddress'];
     }
 
     /**---------------------------------- Network Attributes ----------------------------------*/
     /**
-     * @notice
-     * @param
-     * @return
+     * @description Return the Infura url that matches the network.
+     * @param _chainId Id of the blockchain network.
+     * @return String
      */
     async getNetworkRpc(_chainId) {
         if (_chainId == 1) {
@@ -313,9 +358,12 @@ class DataManager {
     }
     /**---------------------------------- JSON Read/Write ----------------------------------*/
     /**
-     * @notice
-     * @param
-     * @return
+     * @description Write the token's address to the correct local files.
+     * @param _symbol The ticker symbol of the token.
+     * @param _address The address of the token.
+     * @param _pathToFile The path where the json file is located.
+     * @param _sortOnExit Boolean that determines if the json keys are sorted before the function ends.
+     * @return None
      */
     async _writeToTokenAddresses(
         _symbol,
@@ -338,33 +386,34 @@ class DataManager {
             const data = { [_symbol]: _address };
             fs.writeFileSync(_pathToFile, JSON.stringify(data, null, 2));
         }
-        //fs.writeFile(pathToFile);
     }
     /**
-     * @notice Takes a list of addresses and write each one to their associated network file.
-     * @param
-     * @param addressData Json structure of tokens.
-     * @return
+     * @notice Takes a list of addresses and write each one to their associated network's file.
+     * @param _symbol The ticker symbol of the token.
+     * @param _addressData Json structure of tokens. Includes addresses on all available networks.
+     * @return None
      */
-    async _writeAllAddresses(symbol, addressData) {
+    async _writeAllAddresses(_symbol, _addressData) {
         let pathInfo;
         let unknownNetworks = [];
 
-        for (const [key, value] of Object.entries(addressData.address)) {
+        for (const [key, value] of Object.entries(_addressData.address)) {
             let networkName = await this.getNetworkName(key);
 
             if (networkName == undefined) {
                 unknownNetworks.push(key);
             } else {
                 let path = `${basePath}\\network-data\\${networkName}\\tokens\\${networkName}_token_addresses.json`;
-                this._writeToTokenAddresses(symbol, value, path);
+                this._writeToTokenAddresses(_symbol, value, path);
             }
         }
     }
 
     /**
-     * @notice
-     * @param
+     * @description Write's the number of decimals a token uses to a local file.
+     * @param _symbol Ticker symbol of the token.
+     * @param _decimals Number of decimals the token uses. (Ex: USDC uses 6, WETH uses 18)
+     * @param _sortOnExit Boolean that determines if the json keys are sorted before the function ends.
      * @return
      */
     async _writeTokenDecimals(_symbol, _decimals, _sortOnExit) {
@@ -396,6 +445,16 @@ class DataManager {
         }
     }
 
+    /**
+     * @description Write the token pair's address to local storage.
+     * @param _baseToken The first token in the pair.
+     * @param _quoteToken The second token in the pair.
+     * @param _poolAddress The address of the token pair.
+     * @param _dex Name of the decentralized exchange where this pair is located.
+     * @param _chainId Id of the blockchain network.
+     * @param _feeTier Fee tier that the pool is located in.
+     * @return
+     */
     async _writeTokenPairToPool(
         _baseToken,
         _quoteToken,
@@ -452,7 +511,7 @@ class DataManager {
     }
     /**---------------------------------- Utilities ----------------------------------*/
     /**
-     * @notice
+     * @description
      * @param
      * @return
      */
@@ -525,27 +584,7 @@ class DataManager {
             }
         }
     }
-    /**---------------------------------- Sushiswap Pools ----------------------------------*/
-    /**
-     * @description
-     * @param
-     * @return
-     */
-    async getSushiswapPoolAddress(
-        _symbol0,
-        _symbol1,
-        _feeTier = 500,
-        _chainId,
-        _findCheapest = false
-    ) {
-        const networkName = idToNetworkName[_chainId];
-        const sushiPath = `D:/CryptoData/crypto-data/network-data/${networkName}/dexs/sushiswap/sushiswap_${networkName}_pools.json`;
-    }
-    /**
-     * @description
-     * @param
-     * @return
-     */
+
     /**---------------------------------- Pool Utilities ----------------------------------*/
     /**
      * @description Takes the fee tiers for a pool, and returns the cheapest available one.
@@ -561,6 +600,21 @@ class DataManager {
         }
     }
     /**---------------------------------- Token Addresses ----------------------------------*/
+    /**
+     * @description
+     * @param
+     * @return
+     */
+    /**
+     * @description
+     * @param
+     * @return
+     */
+    /**
+     * @description
+     * @param
+     * @return
+     */
 }
 
 module.exports = {
