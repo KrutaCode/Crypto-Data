@@ -9,7 +9,6 @@ const { ethers } = require('ethers');
 const readFile = util.promisify(fs.readFile);
 
 // Openzeppelin imports
-const {} = require('@openzeppelin/contracts/token/ERC20/extensions');
 
 // Change the path to the directory that this project ("crypto-data") is located.
 const basePath = 'D:/CryptoData/crypto-data';
