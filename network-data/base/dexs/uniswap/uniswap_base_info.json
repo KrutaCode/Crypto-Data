@@ -1,0 +1,8 @@
+{
+    "exchangeName": "uniswap",
+    "network": "base",
+    "factoryAddress": "0x33128a8fC17869897dcE68Ed026d694621f6FDfD",
+    "routerAddress": "0x2626664c2603336E57B271c5C0b26F421741e481",
+    "quoterAddress": "0x3d4e44Eb1374240CE5F1B871ab261CD16335B76a",
+    "universalRouterAddress": "0x198EF79F1F515F02dFE9e3115eD9fC07183f02fC"
+}

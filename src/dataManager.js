@@ -1,18 +1,25 @@
-require('dotenv').config({ path: 'D:/CryptoData/network-data/.env' });
-const Web3 = require("web3");
-const {chainIds} = require('./chainIds.js')
-const {idToNetworkName, decimalPaths} = require("./dataPaths.js");
+require('dotenv').config({ path: 'D:/CryptoData/crypto-data/.env' });
+const Web3 = require('web3');
+const { chainIds } = require('./chainIds.js');
+const { idToNetworkName, decimalPaths } = require('./dataPaths.js');
 const fs = require('fs');
 const util = require('util');
 const axios = require('axios');
 const { ethers } = require('ethers');
 const readFile = util.promisify(fs.readFile);
 
+// Change the path to the directory that this project ("crypto-data") is in.
+const basePath = 'D:/CryptoData/crypto-data';
 
+// Paths to local files
+const poolPaths = 'network-data/{}/dexs/{}/{}_{}_pools.json';
 
+const nullAddress = '0x0000000000000000000000000000000000000000';
 
-
-
+// Cases where "Coinmarketcap" uses a different symbol than local storage.
+const cmcCases = {
+    'USDC.e': 'USDCE',
+};
 
 class DataManager {
     verbose;
@@ -31,7 +38,7 @@ class DataManager {
      */
     async getTokenAddress(symbol, chainId, writeAddresses = true) {
         const networkName = idToNetworkName[chainId];
-        const filePath = `D:/CryptoData/crypto-data/networks/${networkName}/${networkName}_token_addresses.json`
+        const filePath = `${basePath}/network-data/${networkName}/tokens/${networkName}_token_addresses.json`;
         let jsonData = await readFile(filePath);
         jsonData = JSON.parse(jsonData);
         if (jsonData[symbol]) {
@@ -57,7 +64,13 @@ class DataManager {
      * @return JSON with addresses
      */
     async _queryTokenAddresses(_symbol) {
+        // Format symbol for special cases where Coinmarketcap uses a different symbol than local storage.
+        if (cmcCases.hasOwnProperty(_symbol)) {
+            _symbol = cmcCases[_symbol];
+        }
+
         const url = `https://pro-api.coinmarketcap.com/v1/cryptocurrency/info?symbol=${_symbol}&CMC_PRO_API_KEY=${process.env.COINMARKETCAP_API_KEY}`;
+        console.log(`URL: ${url}`);
         const response = await axios.get(url);
         // Parse the data
         const data = await response.data['data'];
@@ -190,7 +203,9 @@ class DataManager {
      * @return
      */
     async getTokenSymbol(_tokenAddress, _chainId) {
-        let jsonData = await readFile(paths[_chainId]['tokenAddressPath']);
+        const networkName = idToNetworkName[_chainId];
+        const pathToTokenAddress = `${basePath}/network-data/${networkName}/tokens/${networkName}_token_addresses.json`;
+        let jsonData = await readFile(pathToTokenAddress);
         // console.log(`JSON: ${jsonData}`);
         jsonData = await JSON.parse(jsonData);
 
@@ -203,6 +218,99 @@ class DataManager {
      * @param
      * @return
      */
+    /**---------------------------------- Dex Attributes ----------------------------------*/
+    /**
+     * @description Retrieve the address of the main factory that the specified decentralized exchange uses.
+     * @param _dex Name of the decentralized exchange.
+     * @param _chainId Id of the blockchain network.
+     * @return String of the factory address.
+     */
+    async getDexFactoryAddress(_dex, _chainId) {
+        const networkName = idToNetworkName[_chainId];
+        const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
+        let jsonData = await readFile(pathToDex);
+        jsonData = await JSON.parse(jsonData);
+        return jsonData['factoryAddress'];
+    }
+    /**
+     * @description Retrieve the ABI for the factory that the decentralized exchange uses.
+     * @param _dex Name of the decentralized exchange.
+     * @param _chainId Id of the blockchain network.
+     * @return JSON of the abi.
+     */
+    async getDexFactoryAbi(_dex, _chainId) {
+        const networkName = idToNetworkName[_chainId];
+        const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
+        let jsonData = await readFile(pathToDex);
+        jsonData = await JSON.parse(jsonData);
+        return jsonData['factoryAbi'];
+    }
+    /**
+     * @description Retrieve the address of the main router that the specified decentralized exchange uses.
+     * @param _dex Name of the decentralized exchange.
+     * @param _chainId Id of the blockchain network.
+     * @return String of the router address.
+     */
+    async getDexRouterAddress(_dex, _chainId) {
+        const networkName = idToNetworkName[_chainId];
+        const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
+        let jsonData = await readFile(pathToDex);
+        jsonData = await JSON.parse(jsonData);
+        return jsonData['routerAddress'];
+    }
+    /**
+     * @description Retrieve the ABI for the router that the specified decentralized exchange uses.
+     * @param _dex Name of the decentralized exchange.
+     * @param _chainId Id of the blockchain network.
+     * @return JSON of the abi.
+     */
+    async getDexRouterAbi(_dex, _chainId) {
+        const networkName = idToNetworkName[_chainId];
+        const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
+        let jsonData = await readFile(pathToDex);
+        jsonData = await JSON.parse(jsonData);
+        return jsonData['routerAbi'];
+    }
+
+    /**
+     * @description Retrieve the ABI for the pools.
+     * @param _dex Name of the decentralized exchange.
+     * @param _chainId Id of the blockchain network.
+     * @return JSON of the abi.
+     */
+    async getDexPoolAbi(_dex, _chainId) {
+        const networkName = idToNetworkName[_chainId];
+        const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
+        let jsonData = await readFile(pathToDex);
+        jsonData = await JSON.parse(jsonData);
+        return jsonData['poolAbi'];
+    }
+
+    async getDexQuoterAddress(_dex = 'uniswap', _chainId) {
+        const networkName = idToNetworkName[_chainId];
+        const pathToDex = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_info.json`;
+        let jsonData = await readFile(pathToDex);
+        jsonData = await JSON.parse(jsonData);
+        return jsonData['quoterAddress'];
+    }
+
+    /**---------------------------------- Network Attributes ----------------------------------*/
+    /**
+     * @notice
+     * @param
+     * @return
+     */
+    async getNetworkRpc(_chainId) {
+        if (_chainId == 1) {
+            return process.env.INFURA_ETHEREUM_URL;
+        } else if (_chainId == 10) {
+            return process.env.INFURA_OPTIMISM_URL;
+        } else if (_chainId == 137) {
+            return process.env.INFURA_POLYGON_URL;
+        } else if (_chainId == 42161) {
+            return process.env.INFURA_ARBITRUM_URL;
+        }
+    }
     /**---------------------------------- JSON Read/Write ----------------------------------*/
     /**
      * @notice
@@ -243,12 +351,13 @@ class DataManager {
         let unknownNetworks = [];
 
         for (const [key, value] of Object.entries(addressData.address)) {
-            // Check if there is a folder for the associated network.
-            if (paths.hasOwnProperty(key)) {
-                pathInfo = paths[key].tokenAddressPath;
-                this._writeToTokenAddresses(symbol, value, pathInfo);
-            } else {
+            let networkName = await this.getNetworkName(key);
+
+            if (networkName == undefined) {
                 unknownNetworks.push(key);
+            } else {
+                let path = `${basePath}\\network-data\\${networkName}\\tokens\\${networkName}_token_addresses.json`;
+                this._writeToTokenAddresses(symbol, value, path);
             }
         }
     }
@@ -286,6 +395,61 @@ class DataManager {
             );
         }
     }
+
+    async _writeTokenPairToPool(
+        _baseToken,
+        _quoteToken,
+        _poolAddress,
+        _dex,
+        _chainId,
+        _feeTier
+    ) {
+        // Turn _poolAddress to null if the address is invalid.
+        if (_poolAddress == nullAddress) {
+            _poolAddress = 'null';
+        }
+
+        const networkName = await this.getNetworkName(_chainId);
+        const path = `${basePath}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_pools.json`;
+        console.log(path);
+        let jsonData = await readFile(path);
+        jsonData = JSON.parse(jsonData);
+
+        /**
+         * @Case1
+         * @Description _baseToken *does not* exist in json.
+         * @Logic If jsonData does not have a key for "_baseToken", it will create an entire structure for the pool address.
+         *        Since the "_baseToken" does not exist in the json, we can assume the "_quoteToken" or "_feeTier" also do not exist.
+         */
+        if (!jsonData.hasOwnProperty(_baseToken)) {
+            jsonData[_baseToken] = {
+                [_quoteToken]: {
+                    [_feeTier]: _poolAddress,
+                },
+            };
+        } else if (!jsonData[_baseToken].hasOwnProperty(_quoteToken)) {
+            /**
+             * @Case2
+             * @Description _baseToken *does* exist, but _quoteToken *does not* exist.
+             * @Logic Create new entry within the _baseToken key.
+             */
+            jsonData[_baseToken][_quoteToken] = {
+                [_feeTier]: _poolAddress,
+            };
+        } else if (
+            !jsonData[_baseToken][_quoteToken].hasOwnProperty(_feeTier)
+        ) {
+            /**
+             * @Case3
+             * @Description _baseToken & _quoteToken *does* exist. _feeTier *does not* exist.
+             * @Logic Creates a new entry within _quoteToken key.
+             *
+             */
+            jsonData[_baseToken][_quoteToken][_feeTier] = _poolAddress;
+        }
+
+        fs.writeFileSync(path, JSON.stringify(jsonData, null, 2));
+    }
     /**---------------------------------- Utilities ----------------------------------*/
     /**
      * @notice
@@ -301,12 +465,15 @@ class DataManager {
         }
         return sortedObject;
     }
-    
+
     /**
-     * @description
-     * @param
-     * @return
+     * @description Returns the network name of the associated chain id.
+     * @param _chainId Id of the blockchain network.
+     * @return String
      */
+    async getNetworkName(_chainId) {
+        return idToNetworkName[_chainId];
+    }
     /**
      * @description
      * @param
@@ -315,39 +482,46 @@ class DataManager {
     /**---------------------------------- Uniswap Pools ----------------------------------*/
     /**
      * @description Get the address for a liquidity pool on the Uniswap Exchange
-     * @param _symbol0 First symbol in the pair. 
-     * @param _symbol1 Second symbol in the pair. 
-     * @param _feeTier The fee-tier of the pool 
+     * @param _symbol0 First symbol in the pair.
+     * @param _symbol1 Second symbol in the pair.
+     * @param _feeTier The fee-tier of the pool
      * @param _chainId The id of the blockchain network.
-     * @param _findCheapest If true, it will "override" the specified _feeTier variable and find the cheapest fee-tier.   
-     * @return String of address. 
+     * @param _findCheapest If true, it will "override" the specified _feeTier variable and find the cheapest fee-tier.
+     * @return String of address.
      */
-    async getPoolAddress(_symbol0, _symbol1, _chainId, _feeTier = 500, _dex = "uniswap", _findCheapest = false) {
+    async getPoolAddress(
+        _symbol0,
+        _symbol1,
+        _chainId,
+        _feeTier = 500,
+        _dex = 'uniswap',
+        _findCheapest = false
+    ) {
         const networkName = idToNetworkName[_chainId];
         const uniPath = `D:/CryptoData/crypto-data/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_pools.json`;
         let jsonData = await readFile(uniPath, 'utf-8');
         jsonData = JSON.parse(jsonData);
-        // Override _feeTier, and return the cheapest tier. 
-        if (_findCheapest){
+        // Override _feeTier, and return the cheapest tier.
+        if (_findCheapest) {
             try {
                 const feeTiers = jsonData[_symbol0][_symbol1];
                 const poolAddress = this._getCheapestPool(feeTiers);
                 return poolAddress;
-            } catch(error) {
-                if(this.verbose) {
+            } catch (error) {
+                if (this.verbose) {
                     console.log(`[getPoolAddress Error] ${error}`);
                 }
-                return "null";
+                return null;
             }
         } else {
             try {
                 const poolAddress = jsonData[_symbol0][_symbol1][_feeTier];
                 return poolAddress;
-            } catch(error) {
-                if(this.verbose) {
+            } catch (error) {
+                if (this.verbose) {
                     console.log(`[getPoolAddress Error] ${error}`);
                 }
-                return "null";
+                return null;
             }
         }
     }
@@ -357,7 +531,13 @@ class DataManager {
      * @param
      * @return
      */
-    async getSushiswapPoolAddress(_symbol0, _symbol1, _feeTier = 500, _chainId, _findCheapest = false) {
+    async getSushiswapPoolAddress(
+        _symbol0,
+        _symbol1,
+        _feeTier = 500,
+        _chainId,
+        _findCheapest = false
+    ) {
         const networkName = idToNetworkName[_chainId];
         const sushiPath = `D:/CryptoData/crypto-data/network-data/${networkName}/dexs/sushiswap/sushiswap_${networkName}_pools.json`;
     }
@@ -368,20 +548,19 @@ class DataManager {
      */
     /**---------------------------------- Pool Utilities ----------------------------------*/
     /**
-     * @description Takes the fee tiers for a pool, and returns the cheapest available one. 
+     * @description Takes the fee tiers for a pool, and returns the cheapest available one.
      * @param _feeTiers JSON of the fee-tier and associated addresses.
-     * @return String of the address for the cheapest fee tier. 
+     * @return String of the address for the cheapest fee tier.
      */
     async _getCheapestPool(_feeTiers) {
-        // Iterate through the json. Return the first tier that is not null. 
+        // Iterate through the json. Return the first tier that is not null.
         for (const fee in _feeTiers) {
-            if (_feeTiers[fee] != "null"){
+            if (_feeTiers[fee] != 'null') {
                 return _feeTiers[fee];
             }
         }
     }
     /**---------------------------------- Token Addresses ----------------------------------*/
-
 }
 
 module.exports = {
@@ -392,8 +571,14 @@ async function main() {
     const dataManager = new DataManager();
     //console.log(await dataManager.getTokenAddress('WETH', 1));
     //const decimals = await dataManager.getTokenDecimals('DAI', 1);
-    const poolAddress = await dataManager.getPoolAddress('WMATIC', 'WETH', 137, 500, _dex="sushiswap",_findCheapest=false);
-    console.log(`Pool: ${poolAddress}`);
-}   
+    const poolAddress = await dataManager.getPoolAddress(
+        'WMATIC',
+        'WETH',
+        137,
+        500,
+        (_dex = 'sushiswap'),
+        (_findCheapest = false)
+    );
+}
 
-main();
+//main();
