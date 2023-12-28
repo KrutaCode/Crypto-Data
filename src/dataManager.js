@@ -44,25 +44,26 @@ class DataManager {
      * @param writeAddresses Boolean that determines if the addresses are written to local files. This is to save api calls in the future.
      * @return
      */
-    async getTokenAddress(symbol, chainId, writeAddresses = true) {
-        const networkName = idToNetworkName[chainId];
+    async getTokenAddress(_symbol, _chainId, _writeAddresses = true) {
+        const networkName = await this.getNetworkName(_chainId);
+        console.log(`Network: ${networkName}`);
         const filePath = `${basePath}/network-data/${networkName}/tokens/${networkName}_token_addresses.json`;
         let jsonData = await readFile(filePath);
         jsonData = JSON.parse(jsonData);
-        if (jsonData[symbol]) {
+        if (jsonData[_symbol]) {
             if (this.verbose) {
                 console.log(`[Token Address] Retrieved locally`);
             }
-            return jsonData[symbol];
+            return jsonData[_symbol];
         } else {
-            const tokenAddress = await this._queryTokenAddresses(symbol);
-            if (writeAddresses) {
-                await this._writeAllAddresses(symbol, tokenAddress);
+            const tokenAddress = await this._queryTokenAddresses(_symbol);
+            if (_writeAddresses) {
+                await this._writeAllAddresses(_symbol, tokenAddress);
             }
             if (this.verbose) {
                 console.log(`[Token Address] Retrieved from web`);
             }
-            return tokenAddress[chainId];
+            return tokenAddress[_chainId];
         }
     }
     /**
@@ -121,7 +122,7 @@ class DataManager {
         _writeDecimals = true,
         _sortOnExit = true
     ) {
-        let jsonData = await readFile(decimalPaths);
+        let jsonData = await readFile(tokenDecimalsPath);
         const tokenAddress = await this.getTokenAddress(_symbol, _chainId);
         jsonData = JSON.parse(jsonData);
 
@@ -131,7 +132,10 @@ class DataManager {
             }
             return jsonData[_symbol];
         } else {
-            const decimals = await this._queryTokenDecimals(tokenAddress);
+            const decimals = await this._queryTokenDecimals(
+                tokenAddress,
+                _chainId
+            );
 
             if (_writeDecimals) {
                 this._writeTokenDecimals(_symbol, decimals, _sortOnExit);
@@ -154,14 +158,13 @@ class DataManager {
      * @param _tokenAddress: The address of the token to query.
      * @return: string
      */
-    async _queryTokenDecimals(_tokenAddress) {
+    async _queryTokenDecimals(_tokenAddress, _chainId) {
         try {
+            const rpcUrl = await this.getNetworkRpc(_chainId);
             // Create provider to read blockchain.
-            const provider = new ethers.providers.JsonRpcProvider(
-                process.env.INFURA_ETHEREUM_URL
-            );
+            const provider = new ethers.providers.JsonRpcProvider(rpcUrl);
             // Retrieve the contracts abi.
-            const tokenAbi = await this._queryContractAbi(_tokenAddress);
+            const tokenAbi = await this.getTokenAbi();
             // Create an object representative of the contract.
             const tokenContract = new ethers.Contract(
                 _tokenAddress,
@@ -188,7 +191,7 @@ class DataManager {
      */
     async getTokenAbi(token_standard = 'erc20') {
         if (token_standard == 'erc20') {
-            let jsonData = fs.readFile(erc20AbiPath);
+            let jsonData = await readFile(erc20AbiPath);
             jsonData = JSON.parse(jsonData);
             if (this.verbose) {
                 console.log(`[Token Abi] Retrieved locally`);
@@ -564,6 +567,11 @@ class DataManager {
             try {
                 const feeTiers = jsonData[_symbol0][_symbol1];
                 const poolAddress = this._getCheapestPool(feeTiers);
+                if (this.verbose) {
+                    console.log(
+                        `[${_dex} Pool Address] Retrieved locally [Cheapest Pool Found]`
+                    );
+                }
                 return poolAddress;
             } catch (error) {
                 if (this.verbose) {
@@ -574,6 +582,9 @@ class DataManager {
         } else {
             try {
                 const poolAddress = jsonData[_symbol0][_symbol1][_feeTier];
+                if (this.verbose) {
+                    console.log(`[${_dex} Pool Address] Retrieved locally`);
+                }
                 return poolAddress;
             } catch (error) {
                 if (this.verbose) {
