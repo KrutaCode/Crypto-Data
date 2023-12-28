@@ -83,6 +83,9 @@
       "500": "0xb6e57ed85c4c9dbfef2a68711e9d6f36c56e0fcb",
       "3000": "null",
       "10000": "null"
+    },
+    "USDC": {
+      "500": "0xB6e57ed85c4c9dbfEF2a68711e9d6f36c56e0FcB"
     }
   },
   "LINK": {

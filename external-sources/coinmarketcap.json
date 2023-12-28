@@ -1,0 +1,2455 @@
+{
+  "AAVE": {
+    "name": "Aave",
+    "cmcName": "aave",
+    "cmcId": 7278,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x7Fc66500c84A76Ad7e9c93437bFc5Ac33E2DDaE9"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xfb6115445bff7b52feb98650c87f44907e58f802"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0xDF613aF6B44a31299E48131e9347F034347E2F00"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0x202b4936fe1a82a4965220860ae46d7d3939bb25"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0xd6df932a45c0f255f85145f286ea0b292b21c90b"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x6a07A792ab2965C72a5B8088d3a069A7aC3a993B"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x8ce2dee54bb9921a2ae0a63dbb2df8ed88b91dd9"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "7fc66500c84a76ad7e9c93437bfc5ac33e2ddae9.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "3vAs4D1WE6Na4tCgt4BApgFfENbm8WY7q4cSPD1yM4Cg"
+      },
+      "null": {
+        "network": "Sora",
+        "address": "0x0091bd8d8295b25cab5a7b8b0e44498e678cfc15d872ede3215f7d4c7635ba36"
+      }
+    }
+  },
+  "AGIX": {
+    "name": "SingularityNET",
+    "cmcName": "singularitynet",
+    "cmcId": 2424,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x5B7533812759B45C2B44C19e320ba2cD2681b542"
+      },
+      "cardano": {
+        "network": "Cardano",
+        "address": "f43a62fdc3965df486de8a0d32fe800963589c41b38946602a0dc53541474958"
+      }
+    }
+  },
+  "AKT": {
+    "name": "Akash Network",
+    "cmcName": "akash-network",
+    "cmcId": 7431,
+    "contracts": {
+      "118": {
+        "network": "Cosmos",
+        "address": "IBC/1480B8FD20AD5FCAE81EA87584D269547DD4D436843C1D20F15E00EB64743EF4"
+      }
+    }
+  },
+  "AMP": {
+    "name": "Amp",
+    "cmcName": "amp",
+    "cmcId": 6945,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xff20817765cb7f73d4bde2e66e067e58d11095c2"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "ff20817765cb7f73d4bde2e66e067e58d11095c2.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "D559HwgjYGDYsXpmFUKxhFTEwutvS9sya1kXiyCVogCV"
+      }
+    }
+  },
+  "ANKR": {
+    "name": "Ankr",
+    "cmcName": "ankr",
+    "cmcId": 3783,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x8290333cef9e6d528dd5618fb97a76f268f3edd4"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xf307910a4c7bbc79691fd374889b36d8531b08e3"
+      },
+      "97": {
+        "network": "BNB Beacon Chain (BEP2)",
+        "address": "ANKR-E97"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x101a023270368c0d50bffb62780f4afd4ea79c35"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0xDF474B7109b73b7D57926d43598D5934131136b2"
+      },
+      "1101": {
+        "network": "Polygon zkEVM",
+        "address": "0xdf474b7109b73b7d57926d43598d5934131136b2"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xAeAeeD23478c3a4b798e4ed40D8B7F41366Ae861"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xDF474B7109b73b7D57926d43598D5934131136b2"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "Gq2norJ1kBemBp3mPfkgAUMhMMmnFmY4zEyi26tRcxFB"
+      }
+    }
+  },
+  "APE": {
+    "name": "ApeCoin",
+    "cmcName": "apecoin-ape",
+    "cmcId": 18876,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x4d224452801aced8b2f0aebe155379bb5d594381"
+      }
+    }
+  },
+  "AR": {
+    "name": "Arweave",
+    "cmcName": "arweave",
+    "cmcId": 5632,
+    "contracts": {}
+  },
+  "ARB": {
+    "name": "Arbitrum",
+    "cmcName": "arbitrum",
+    "cmcId": 11841,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xB50721BCf8d664c30412Cfbc6cf7a15145234ad1"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x912CE59144191C1204E64559FE8253a0e49E6548"
+      }
+    }
+  },
+  "ARKM": {
+    "name": "Arkham",
+    "cmcName": "arkham",
+    "cmcId": 27565,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x6e2a43be0b1d33b726f0ca3b8de60b3482b8b050"
+      }
+    }
+  },
+  "ATOM": {
+    "name": "Cosmos",
+    "cmcName": "cosmos",
+    "cmcId": 3794,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x8D983cb9388EaC77af0474fA441C4815500Cb7BB"
+      },
+      "25": {
+        "network": "Cronos",
+        "address": "0xb888d8dd1733d72681b30c00ee76bde93ae7aa93"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x0eb3a705fc54725037cc9e008bdede697f62f335"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0xac51C4c48Dc3116487eD4BC16542e27B5694Da1b"
+      },
+      "osmosis-1": {
+        "network": "Osmosis",
+        "address": "IBC/27394FB092D2ECCD56123C74F36E4C1F926001CEADA9CA97EA622B25F41E5EB2"
+      }
+    }
+  },
+  "AXL": {
+    "name": "Axelar",
+    "cmcName": "axelar",
+    "cmcId": 17799,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x467719aD09025FcC6cF6F8311755809d45a5E5f3"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x8b1f4432F943c465A973FeDC6d7aa50Fc96f1f65"
+      },
+      "118": {
+        "network": "Cosmos",
+        "address": "ibc/903A61A498756EA560B85A85132D3AEE21B5DEDD41213725D22ABF276EA6945E"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x6e4E624106Cb12E168E6533F8ec7c82263358940"
+      },
+      "8453": {
+        "network": "Base",
+        "address": "0x23ee2343B892b1BB63503a4FAbc840E0e2C6810f"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x23ee2343B892b1BB63503a4FAbc840E0e2C6810f"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x44c784266cf024a60e8acf2427b9857ace194c5d"
+      }
+    }
+  },
+  "AXS": {
+    "name": "Axie Infinity",
+    "cmcName": "axie-infinity",
+    "cmcId": 6783,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xbb0e17ef65f82ab018d8edd776e8dd940327b28b"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x715d400f88c167884bbcc41c5fea407ed4d2f8a0"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "HysWcbHiYY9888pHbaqhwLYZQeZrcQMXKQWRqS7zcPK5"
+      },
+      "1666600000": {
+        "network": "Harmony",
+        "address": "0x14a7b318fed66ffdcc80c1517c172c13852865de"
+      }
+    }
+  },
+  "BAL": {
+    "name": "Balancer",
+    "cmcName": "balancer",
+    "cmcId": 5728,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xba100000625a3754423978a60c9317c58a424e3D"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0xFE8B128bA8C78aabC59d4c64cEE7fF28e9379921"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x7eF541E2a22058048904fE5744f9c7E4C57AF717"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0x045de15ca76e76426e8fc7cba8392a3138078d0f"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x9a71012b13ca4d3d0cdc72a177df3ef03b0e76a3"
+      },
+      "8453": {
+        "network": "Base",
+        "address": "0x7c6b91D9Be155A6Db01f749217d76fF02A7227F2"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x040d1edc9569d4bab2d15287dc5a4f10f56a56b8"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "ba100000625a3754423978a60c9317c58a424e3d.factory.bridge.near"
+      }
+    }
+  },
+  "BAND": {
+    "name": "Band Protocol",
+    "cmcName": "band-protocol",
+    "cmcId": 4679,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xba11d00c5f74255f56a5e366f4f77f5a186d7f55"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xad6caeb32cd2c308980a548bd0bc5aa4306c6c18"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0xe154A435408211AC89757B76C4FbE4Dc9ED2Ef27"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x46E7628E8b4350b2716ab470eE0bA1fa9e76c6C5"
+      }
+    }
+  },
+  "CAKE": {
+    "name": "PancakeSwap",
+    "cmcName": "pancakeswap",
+    "cmcId": 7186,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x152649eA73beAb28c5b49B26eb48f7EAD6d4c898"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x0e09fabb73bd3ade0a17ecc321fd13a19e81ce82"
+      },
+      "324": {
+        "network": "zkSync Era",
+        "address": "0x3A287a06c66f9E95a56327185cA2BDF5f031cEcD"
+      },
+      "1101": {
+        "network": "Polygon zkEVM",
+        "address": "0x0D1E753a25eBda689453309112904807625bEFBe"
+      },
+      "8453": {
+        "network": "Base",
+        "address": "0x3055913c90Fcc1A6CE9a358911721eEb942013A1"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x1b896893dfc86bb67Cf57767298b9073D2c1bA2c"
+      },
+      "undefined": {
+        "network": "Aptos",
+        "address": "0x159df6b7689437016108a019fd5bef736bac692b6d4a1f10c941f6fbb9a74ca6::oft::CakeOFT"
+      }
+    }
+  },
+  "CFG": {
+    "name": "Centrifuge",
+    "cmcName": "centrifuge",
+    "cmcId": 6748,
+    "contracts": {}
+  },
+  "COMP": {
+    "name": "Compound",
+    "cmcName": "compound",
+    "cmcId": 5692,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xc00e94cb662c3520282e6f5717214004a7f26888"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x52ce071bd9b1c4b00a0b92d298c512478cad67e8"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0xDf6FF92bfDC1e8bE45177DC1f4845d391D3ad8fD"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xc3048E19E76CB9a3Aa9d77D8C03c29Fc906e2437"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "c00e94cb662c3520282e6f5717214004a7f26888.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "AwEauVaTMQRB71WeDnwf1DWSBxaMKjEPuxyLr1uixFom"
+      },
+      "null": {
+        "network": "Sora",
+        "address": "0x00dbd45af9f2ea406746f9025110297469e9d29efc60df8d88efb9b0179d6c2c"
+      }
+    }
+  },
+  "CREAM": {
+    "name": "Cream Finance",
+    "cmcName": "cream-finance",
+    "cmcId": 6193,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x2ba592f78db6436527729929aaf6c908497cb200"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xd4cb328a82bdf5f03eb737f37fa6b370aef3e888"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x1939D3431CF0E44B1d63b86e2cE489E5a341B1Bf"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x657A1861c15A3deD9AF0B6799a195a249ebdCbc6"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "2ba592f78db6436527729929aaf6c908497cb200.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "HihxL2iM6L6P1oqoSeiixdJ3PhPYNxvSKH9A2dDqLVDH"
+      }
+    }
+  },
+  "CRV": {
+    "name": "Curve DAO Token",
+    "cmcName": "curve-dao-token",
+    "cmcId": 6538,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xD533a949740bb3306d119CC777fa900bA034cd52"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x712b3d230f3c1c19db860d80619288b1f0bdd0bd"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x1E4F97b9f9F913c46F1632781732927B9019C68b"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x11cDb42B0EB46D95f990BeDD4695A6e3fA034978"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "7gjNiPun3AzEazTZoFEjZgcBMeuaXdpjHq2raZTmTrfs"
+      }
+    }
+  },
+  "CVX": {
+    "name": "Convex Finance",
+    "cmcName": "convex-finance",
+    "cmcId": 9903,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x4e3fbd56cd56c3e72c1403e103b45db9da5b9d2b"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "BLvmrccP4g1B6SpiVvmQrLUDya1nZ4B2D1nm9jzKF7sz"
+      }
+    }
+  },
+  "CYBER": {
+    "name": "CyberConnect",
+    "cmcName": "cyberconnect",
+    "cmcId": 24781,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x14778860e937f509e651192a90589de711fb88a9"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0x14778860e937f509e651192a90589de711fb88a9"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x14778860e937f509e651192a90589de711fb88a9"
+      }
+    }
+  },
+  "DAI": {
+    "name": "Dai",
+    "cmcName": "multi-collateral-dai",
+    "cmcId": 4943,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x6b175474e89094c44da98b954eedeac495271d0f"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0xda10009cbd5d07dd0cecc66161fc93d7c9000da1"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x1af3f329e8be154074d8769d1ffa4ee058b1dbc3"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x44fA8E6f47987339850636F88629646662444217"
+      },
+      "118": {
+        "network": "Cosmos",
+        "address": "ibc/0CD3A0285E1341859B5E86B6AB7682F023D03E97607CCC1DC95706411D866DF7"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x8f3Cf7ad23Cd3CaDbD9735AFf958023239c6A063"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x8D11eC38a3EB5E956B052f67Da8Bdc9bef8Abf3E"
+      },
+      "1088": {
+        "network": "Metis Andromeda",
+        "address": "0x4651b38e7ec14bb3db731369bfe5b08f2466bd0a"
+      },
+      "1284": {
+        "network": "Moonbeam",
+        "address": "0x765277eebeca2e31912c9946eae1021199b39c61"
+      },
+      "39797": {
+        "network": "Energi",
+        "address": "0x0ee5893f434017d8881750101ea2f7c49c0eb503"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xDA10009cBd5D07dd0CeCc66161FC93D7c9000da1"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xd586E7F844cEa2F87f50152665BCbc2C279D8d70"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "6b175474e89094c44da98b954eedeac495271d0f.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "EjmyN6qEC1Tf1JxiG1ae7UTJhUxSwk1TCWNWqxWV4J6o"
+      },
+      "1666600000": {
+        "network": "Harmony",
+        "address": "0xef977d2f931c1978db5f6747666fa1eacb0d0339"
+      },
+      "null": {
+        "network": "Sora",
+        "address": "0x0200060000000000000000000000000000000000000000000000000000000000"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1zmclyfepfmqvfqflu8r3lv6f75trmg05z7xq95"
+      },
+      "SN_MAIN": {
+        "network": "Starknet",
+        "address": "0xda114221cb83fa859dbdb4c44beeaa0bb37c7537ad5ae66fe5e0efd20e6eb3"
+      }
+    }
+  },
+  "DODO": {
+    "name": "DODO",
+    "cmcName": "dodo",
+    "cmcId": 7224,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x67ee3Cb086F8a16f34beE3ca72FAD36F7Db929e2"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x69Eb4FA4a2fbd498C257C57Ea8b7655a2559A581"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "43dfc4159d86f3a37a5a4b3d4580b888ad7d4ddd.factory.bridge.near"
+      }
+    }
+  },
+  "DOGE": {
+    "name": "Dogecoin",
+    "cmcName": "dogecoin",
+    "cmcId": 74,
+    "contracts": {
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xba2ae424d960c26247dd6c32edc70b295c744c43"
+      }
+    }
+  },
+  "DOT": {
+    "name": "Polkadot",
+    "cmcName": "polkadot-new",
+    "cmcId": 6636,
+    "contracts": {
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x7083609fce4d1d8dc0c979aab8c869ea2c873402"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0xa2c49cee16a5e5bdefde931107dc1fae9f7773e3"
+      }
+    }
+  },
+  "ENS": {
+    "name": "Ethereum Name Service",
+    "cmcName": "ethereum-name-service",
+    "cmcId": 13855,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xC18360217D8F7Ab5e7c516566761Ea12Ce7F9D72"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "CLQsDGoGibdNPnVCFp8BAsN2unvyvb41Jd5USYwAnzAg"
+      }
+    }
+  },
+  "ETH": {
+    "name": "Ethereum",
+    "cmcName": "ethereum",
+    "cmcId": 1027,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+      },
+      "97": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x2170ed0880ac9a755fd29b2688956bd959f933f8"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0x64ff637fb478863b7468bc97d30a5bf3a428a1fd"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xf20d962a6c8f70c731bd838a3a388d7d48fa6e15"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "aurora"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "2FPyTwcZLUg1MDrwsyoP4D6s1tM7hAkHYRjkNb5w6Pxk"
+      },
+      "null": {
+        "network": "Sora",
+        "address": "0x0200070000000000000000000000000000000000000000000000000000000000"
+      },
+      "SN_MAIN": {
+        "network": "Starknet",
+        "address": "0x49d36570d4e46f48e99674bd3fcc84644ddd6b96f7c741b1562b82f9e004dc7"
+      }
+    }
+  },
+  "ETHDYDX": {
+    "name": "dYdX (ethDYDX)",
+    "cmcName": "dydx-ethdydx",
+    "cmcId": 11156,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x92d6c1e31e14520e676a687f0a93788b716beff5"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "4Hx6Bj56eGyw8EJrrheM6LBQAvVYRikYCWsALeTrwyRU"
+      }
+    }
+  },
+  "EWT": {
+    "name": "Energy Web Token",
+    "cmcName": "energy-web-token",
+    "cmcId": 5268,
+    "contracts": {}
+  },
+  "FET": {
+    "name": "Fetch.ai",
+    "cmcName": "fetch",
+    "cmcId": 3773,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xaea46A60368A7bD060eec7DF8CBa43b7EF41Ad85"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x031b41e504677879370e9dbcf937283a8691fa7f"
+      },
+      "118": {
+        "network": "Cosmos",
+        "address": "fetch1qxxlalvsdjd07p07y3rc5fu6ll8k4tmetpha8n"
+      }
+    }
+  },
+  "FLOKI": {
+    "name": "FLOKI",
+    "cmcName": "floki-inu",
+    "cmcId": 10804,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xcf0c122c6b73ff809c693db761e7baebe62b6a2e"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xfb5b838b6cfeedc2873ab27866079ac55363d37e"
+      }
+    }
+  },
+  "FLOW": {
+    "name": "Flow",
+    "cmcName": "flow",
+    "cmcId": 4558,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x5c147e74D63B1D31AA3Fd78Eb229B65161983B2b"
+      }
+    }
+  },
+  "FLR": {
+    "name": "Flare",
+    "cmcName": "flare",
+    "cmcId": 7950,
+    "contracts": {}
+  },
+  "FRAX": {
+    "name": "Frax",
+    "cmcName": "frax",
+    "cmcId": 6952,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x853d955acef822db058eb8505911ed77f175b99e"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0x2E3D870790dC77A83DD1d18184Acc7439A53f475"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x90C97F71E18723b0Cf0dfa30ee176Ab653E89F40"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x45c32fA6DF82ead1e2EF74d17b76547EDdFaFF89"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0xdc301622e621166BD8E82f2cA0A26c13Ad0BE355"
+      },
+      "1101": {
+        "network": "Polygon zkEVM",
+        "address": "0xff8544fed5379d9ffa8d47a74ce6b91e632ac44d"
+      },
+      "1285": {
+        "network": "Moonriver",
+        "address": "0x1a93b23281cc1cde4c4741353f3064709a16197d"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x17FC002b466eEc40DaE837Fc4bE5c67993ddBd6F"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xD24C2Ad096400B6FBcd2ad8B24E7acBc21A1da64"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "853d955acef822db058eb8505911ed77f175b99e.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "FR87nWEUxVgerFGhZM8Y4AggKGLnaXswr1Pd8wZ4kZcp"
+      }
+    }
+  },
+  "FTM": {
+    "name": "Fantom",
+    "cmcName": "fantom",
+    "cmcId": 3513,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x4e15361fd6b4bb609fa63c81a2be19d873717870"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xad29abb318791d579433d831ed122afeaf29dcfe"
+      },
+      "97": {
+        "network": "BNB Beacon Chain (BEP2)",
+        "address": "FTM-A64"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "8gC27rQF4NEDYfyf5aS8ZmQJUum5gufowKGYRRba4ENN"
+      }
+    }
+  },
+  "FXS": {
+    "name": "Frax Share",
+    "cmcName": "frax-share",
+    "cmcId": 6953,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x3432b6a60d23ca0dfca7761b7ab56459d9c964d0"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xe48A3d7d0Bc88d552f730B62c006bC925eadB9eE"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x82f8cb20c14f134fe6ebf7ac3b903b2117aafa62"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x9d2f299715d94d8a7e6f5eaa8e654e8c74a988a7"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xD67de0e0a0Fd7b15dC8348Bb9BE742F3c5850454"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "6LX8BhMQ4Sy2otmAWj7Y5sKd9YTVVUgfMsBzT6B9W7ct"
+      }
+    }
+  },
+  "GLMR": {
+    "name": "Moonbeam",
+    "cmcName": "moonbeam",
+    "cmcId": 6836,
+    "contracts": {}
+  },
+  "GNO": {
+    "name": "Gnosis",
+    "cmcName": "gnosis-gno",
+    "cmcId": 1659,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x6810e776880c02933d47db1b9fc05908e5386b96"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x9c58bacc331c9aa871afd802db6379a98e80cedb"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xa0b862f60edef4452f25b4160f177db44deb6cf1"
+      }
+    }
+  },
+  "GRT": {
+    "name": "The Graph",
+    "cmcName": "the-graph",
+    "cmcId": 6719,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xc944e90c64b2c07662a292be6244bdf05cda44a7"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x9623063377AD1B27544C965cCd7342f7EA7e88C7"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x8a0cAc13c7da965a312f08ea4229c37869e85cB9"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "c944e90c64b2c07662a292be6244bdf05cda44a7.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "HGsLG4PnZ28L8A4R5nPqKgZd86zUUdmfnkTRnuFJ5dAX"
+      },
+      "null": {
+        "network": "Sora",
+        "address": "0x00d1fb79bbd1005a678fbf2de9256b3afe260e8eead49bb07bd3a566f9fe8355"
+      }
+    }
+  },
+  "GTC": {
+    "name": "Gitcoin",
+    "cmcName": "gitcoin",
+    "cmcId": 10052,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xde30da39c46104798bb5aa3fe8b9e0e1f348163f"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "de30da39c46104798bb5aa3fe8b9e0e1f348163f.factory.bridge.near"
+      }
+    }
+  },
+  "HBAR": {
+    "name": "Hedera",
+    "cmcName": "hedera",
+    "cmcId": 4642,
+    "contracts": {}
+  },
+  "HFT": {
+    "name": "Hashflow",
+    "cmcName": "hashflow",
+    "cmcId": 22461,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xb3999F658C0391d94A37f7FF328F3feC942BcADC"
+      }
+    }
+  },
+  "HNT": {
+    "name": "Helium",
+    "cmcName": "helium",
+    "cmcId": 5665,
+    "contracts": {
+      "1399811149": {
+        "network": "Solana",
+        "address": "hntyVP6YFm1Hg25TN9WGLqM12b8TQmcknKrdu1oxWux"
+      }
+    }
+  },
+  "HOT": {
+    "name": "Holo",
+    "cmcName": "holo",
+    "cmcId": 2682,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x6c6ee5e31d828de241282b9606c8e98ea48526e2"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x346b2968508d32f0192cd7a60ef3d9c39a3cf549"
+      }
+    }
+  },
+  "ICP": {
+    "name": "Internet Computer",
+    "cmcName": "internet-computer",
+    "cmcId": 8916,
+    "contracts": {}
+  },
+  "IMX": {
+    "name": "Immutable",
+    "cmcName": "immutable-x",
+    "cmcId": 10603,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xf57e7e7c23978c3caec3c3548e3d615c346e79ff"
+      }
+    }
+  },
+  "KAVA": {
+    "name": "Kava",
+    "cmcName": "kava",
+    "cmcId": 4846,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x0C356B7fD36a5357E5A017EF11887ba100C9AB76"
+      },
+      "97": {
+        "network": "BNB Beacon Chain (BEP2)",
+        "address": "KAVA-10C"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x87D32F2C0A3D6D091772890C81E321026454a125"
+      }
+    }
+  },
+  "LCX": {
+    "name": "LCX",
+    "cmcName": "lcx",
+    "cmcId": 4950,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x037a54aab062628c9bbae1fdb1583c195585fe41"
+      }
+    }
+  },
+  "LDO": {
+    "name": "Lido DAO",
+    "cmcName": "lido-dao",
+    "cmcId": 8000,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x5a98fcbea516cf06857215779fd812ca3bef1b32"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x986854779804799C1d68867F5E03e601E781e41b"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "HZRCwxP2Vq9PCpPXooayhJ2bxTpo5xfpQrwB1svh332p"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1jxypgnfa07j6w92wazzyskhreq2ey2a5crgt6z"
+      }
+    }
+  },
+  "LINK": {
+    "name": "Chainlink",
+    "cmcName": "chainlink",
+    "cmcId": 1975,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x514910771af9ca656af840dff83e8264ecf986ca"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0x350a791bfc2c21f9ed5d10980dad2e2638ffa7f6"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xf8a0bf9cf54bb92f17374d9e9a321e6a111a51bd"
+      },
+      "70": {
+        "network": "Hoo Smart Chain",
+        "address": "0x294cde734a863dcf65417992424405bccf3973e7"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0xE2e73A1c69ecF83F464EFCE6A5be353a37cA09b2"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0x9e004545c59d359f6b7bfb06a26390b087717b42"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x53e0bca35ec356bd5dddfebbd1fc0fd03fabad39"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0xb3654dc3D10Ea7645f8319668E8F54d2574FBdC8"
+      },
+      "2001": {
+        "network": "Milkomeda",
+        "address": "0xf390830df829cf22c53c8840554b98eafc5dcbc2"
+      },
+      "39797": {
+        "network": "Energi",
+        "address": "0x68Ca48cA2626c415A89756471D4ADe2CC9034008"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xf97f4df75117a78c1A5a0DBb814Af92458539FB4"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x5947bb275c521040051d82396192181b413227a3"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "514910771af9ca656af840dff83e8264ecf986ca.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "CWE8jPTUYhdCTZYWPTe1o5DFqfdjzWKc9WKz6rSjQUdG"
+      },
+      "null": {
+        "network": "Sora",
+        "address": "0x008484148dcf23d1b48908393e7a00d5fdc3bf81029a73eeca62a15ebfb1205a"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra12dfv3f0e6m22z6cnhfn3nxk2en3z3zeqy6ctym"
+      }
+    }
+  },
+  "LRC": {
+    "name": "Loopring",
+    "cmcName": "loopring",
+    "cmcId": 1934,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xbbbbca6a901c926f240b89eacb641d8aec7aeafd"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "HCTVFTzHL21a1dPzKxAUeWwqbE8QMUyvgChFDL4XYoi1"
+      }
+    }
+  },
+  "MANA": {
+    "name": "Decentraland",
+    "cmcName": "decentraland",
+    "cmcId": 1966,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x0f5d2fb29fb7d3cfee444a200298f468908cc942"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x7838796B6802B18D7Ef58fc8B757705D6c9d12b3"
+      },
+      "32659": {
+        "network": "Fusion Network",
+        "address": "0x61be5df5459573a7c25673e74281cef4cef81e7d"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "7dgHoN8wBZCc5wbnQ2C47TDnBMAxG4Q5L3KjP67z8kNi"
+      }
+    }
+  },
+  "MATIC": {
+    "name": "Polygon",
+    "cmcName": "polygon",
+    "cmcId": 3890,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x7D1AfA7B718fb893dB30A3aBc0Cfc608AaCfeBB0"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xcc42724c6683b7e57334c4e856f4c9965ed682bd"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x0000000000000000000000000000000000001010"
+      },
+      "1101": {
+        "network": "Polygon zkEVM",
+        "address": "0xa2036f0538221a77a3937f1379699f44945018d0"
+      },
+      "1284": {
+        "network": "Moonbeam",
+        "address": "0x3405a1bd46b85c5c029483fbecf2f3e611026e45"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "C7NNPWuZCNjZBfW5p6JvGsR8pUdsRpEdP1ZAhnoDwj7h"
+      }
+    }
+  },
+  "MATICX": {
+    "name": "Stader MaticX",
+    "cmcName": "stader-maticx",
+    "cmcId": 19923,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xf03a7eb46d01d9ecaa104558c732cf82f6b6b645"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0xfa68fb4628dff1028cfec22b4162fccd0d45efb6"
+      }
+    }
+  },
+  "MAV": {
+    "name": "Maverick Protocol",
+    "cmcName": "maverick-protocol",
+    "cmcId": 18037,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x7448c7456a97769F6cD04F1E83A4a23cCdC46aBD"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xd691d9a68c887bdf34da8c36f63487333acfd103"
+      }
+    }
+  },
+  "MKR": {
+    "name": "Maker",
+    "cmcName": "maker",
+    "cmcId": 1518,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x9f8f72aa9304c8b593d555f12ef6589cc3a579a2"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x5f0da599bb2cccfcf6fdfd7d81743b6020864350"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x88128fd4b259552A9A1D457f435a6527AAb72d42"
+      }
+    }
+  },
+  "MNT": {
+    "name": "Mantle",
+    "cmcName": "mantle",
+    "cmcId": 27075,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x3c3a81e81dc49a522a592e7622a7e711c06bf354"
+      }
+    }
+  },
+  "MNW": {
+    "name": "Morpheus.Network",
+    "cmcName": "morpheus-network",
+    "cmcId": 2763,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xd3E4Ba569045546D09CF021ECC5dFe42b1d7f6E4"
+      }
+    }
+  },
+  "NTRN": {
+    "name": "Neutron",
+    "cmcName": "neutron-ntrn",
+    "cmcId": 26680,
+    "contracts": {}
+  },
+  "OCEAN": {
+    "name": "Ocean Protocol",
+    "cmcName": "ocean-protocol",
+    "cmcId": 3911,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x967da4048cd07ab37855c090aaf366e4ce1b9f48"
+      },
+      "null": {
+        "network": "Sora",
+        "address": "0x002ca40397c794e25dba18cf807910eeb69eb8e81b3f07bb54f7c5d1d8ab76b9"
+      }
+    }
+  },
+  "OKB": {
+    "name": "OKB",
+    "cmcName": "okb",
+    "cmcId": 3897,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x75231f58b43240c9718dd58b4967c5114342a86c"
+      },
+      "66": {
+        "network": "OKExChain",
+        "address": "0xdf54b6c6195ea4d948d03bfd818d365cf175cfc2"
+      }
+    }
+  },
+  "OP": {
+    "name": "Optimism",
+    "cmcName": "optimism-ethereum",
+    "cmcId": 11840,
+    "contracts": {
+      "10": {
+        "network": "Optimism",
+        "address": "0x4200000000000000000000000000000000000042"
+      }
+    }
+  },
+  "OSMO": {
+    "name": "Osmosis",
+    "cmcName": "osmosis",
+    "cmcId": 12220,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x93A62Ccfcf1EfCB5f60317981F71ed6Fb39F4BA2"
+      },
+      "118": {
+        "network": "Cosmos",
+        "address": "uosmo"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x8C7a56F2F2fD97DA0f5b4FAde180Fa8DC3fbEa8D"
+      }
+    }
+  },
+  "OXT": {
+    "name": "Orchid",
+    "cmcName": "orchid",
+    "cmcId": 5026,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x4575f41308EC1483f3d399aa9a2826d74Da13Deb"
+      }
+    }
+  },
+  "PEPE": {
+    "name": "Pepe",
+    "cmcName": "pepe",
+    "cmcId": 24478,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x6982508145454ce325ddbe47a25d4ec3d2311933"
+      }
+    }
+  },
+  "QNT": {
+    "name": "Quant",
+    "cmcName": "quant",
+    "cmcId": 3155,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x4a220e6096b25eadb88358cb44068a3248254675"
+      }
+    }
+  },
+  "RETH": {
+    "name": "Rocket Pool ETH",
+    "cmcName": "rocket-pool-eth",
+    "cmcId": 15060,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xae78736cd615f374d3085123a210448e74fc6393"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0x9bcef72be871e61ed4fbbc7630889bee758eb81d"
+      }
+    }
+  },
+  "RNDR": {
+    "name": "Render",
+    "cmcName": "render",
+    "cmcId": 5690,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x6de037ef9ad2725eb40118bb1702ebb27e4aeb24"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x61299774020dA444Af134c82fa83E3810b309991"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "rndrizKT3MK1iimdxRdWabcF7Zg7AR5T4nud4EkHBof"
+      }
+    }
+  },
+  "ROSE": {
+    "name": "Oasis Network",
+    "cmcName": "oasis-network",
+    "cmcId": 7653,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x26B80FBfC01b71495f477d5237071242e0d959d7"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x6c6D604D3f07aBE287C1A3dF0281e999A83495C0"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x12AF5C1a232675f62F405b5812A80e7a6F75D746"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "S3SQfD6RheMXQ3EEYn1Z5sJsbtwfXdt7tSAVXPQFtYo"
+      }
+    }
+  },
+  "RPL": {
+    "name": "Rocket Pool",
+    "cmcName": "rocket-pool",
+    "cmcId": 2943,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xd33526068d116ce69f19a9ee46f0bd304f21a51f"
+      }
+    }
+  },
+  "RUNE": {
+    "name": "THORChain",
+    "cmcName": "thorchain",
+    "cmcId": 4157,
+    "contracts": {}
+  },
+  "SAND": {
+    "name": "The Sandbox",
+    "cmcName": "the-sandbox",
+    "cmcId": 6210,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x3845badAde8e6dFF049820680d1F14bD3903a5d0"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0xbbba073c31bf03b8acf7c28ef0738decf3695683"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "49c7WuCZkQgc3M4qH8WuEUNXfgwupZf1xqWkDQ7gjRGt"
+      }
+    }
+  },
+  "SAUCE": {
+    "name": "SaucerSwap",
+    "cmcName": "saucerswap",
+    "cmcId": 21914,
+    "contracts": {
+      "295": {
+        "network": "Hedera Hashgraph",
+        "address": "0.0.731861"
+      }
+    }
+  },
+  "SCRT": {
+    "name": "Secret",
+    "cmcName": "secret",
+    "cmcId": 5604,
+    "contracts": {
+      "118": {
+        "network": "Cosmos",
+        "address": "IBC/0954E1C28EB7AF5B72D24F3BC2B47BBB2FDF91BDDFD57B74B99E133AED40972A"
+      },
+      "secret-4": {
+        "network": "Secret",
+        "address": "secret1k0jntykt7e4g3y88ltc60czgjuqdy4c9e8fzek"
+      }
+    }
+  },
+  "SD": {
+    "name": "Stader",
+    "cmcName": "stader",
+    "cmcId": 12623,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x30D20208d987713f46DFD34EF128Bb16C404D10f"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x3bc5ac0dfdc871b365d159f728dd1b9a0b5481e8"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x1d734A02eF1e1f5886e66b0673b71Af5B53ffA94"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x412a13c109ac30f0db80ad3bd1defd5d0a6c0ac6"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "30d20208d987713f46dfd34ef128bb16c404d10f.factory.bridge.near"
+      },
+      "undefined": {
+        "network": "Aurora",
+        "address": "0x078e103d5f9629ac48b8563fa2bfcd2f6d5fde84"
+      }
+    }
+  },
+  "SHIB": {
+    "name": "Shiba Inu",
+    "cmcName": "shiba-inu",
+    "cmcId": 5994,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x95ad61b0a150d79219dcf64e1e6cc01f0b64c4ce"
+      }
+    }
+  },
+  "SNX": {
+    "name": "Synthetix",
+    "cmcName": "synthetix",
+    "cmcId": 2586,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xc011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0x8700daec35af8ff88c16bdf0418774cb3d7599b4"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x9ac983826058b8a9c7aa1c9171441191232e8404"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0x777850281719d5a96c29812ab72f822e0e09f3da"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x50b728d8d964fd00c2d0aad81718b71311fef68a"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x56ee926bD8c72B2d5fa1aF4d9E4Cbb515a1E3Adc"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xBeC243C995409E6520D7C41E404da5dEba4b209B"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "c011a73ee8576fb46f5e1c5751ca3b9fe0af2a6f.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "8cTNUtcV2ueC3royJ642uRnvTxorJAWLZc58gxAo7y56"
+      }
+    }
+  },
+  "SOL": {
+    "name": "Solana",
+    "cmcName": "solana",
+    "cmcId": 5426,
+    "contracts": {}
+  },
+  "SPELL": {
+    "name": "Spell Token",
+    "cmcName": "spell-token",
+    "cmcId": 11289,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x090185f2135308bad17527004364ebcc2d37e5f6"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x468003b688943977e6130f4f68f23aad939a1040"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x3e6648c5a70a150a88bce65f4ad4d506fe15d2af"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xCE1bFFBD5374Dac86a2893119683F4911a2F7814"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "BCsFXYm81iqXyYmrLKgAp3AePcgLHnirb8FjTs6sjM7U"
+      }
+    }
+  },
+  "STETH": {
+    "name": "Lido Staked ETH",
+    "cmcName": "steth",
+    "cmcId": 8085,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xae7ab96520de3a18e5e111b5eaab095312d7fe84"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "H2mf9QNdU2Niq6QR7367Ua2trBsvscLyX5bz7R3Pw5sE"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1w7ywr6waxtjuvn5svk5wqydqpjj0q9ps7qct4d"
+      }
+    }
+  },
+  "STRD": {
+    "name": "Stride",
+    "cmcName": "stride",
+    "cmcId": 21781,
+    "contracts": {
+      "118": {
+        "network": "Cosmos",
+        "address": "ibc/A8CA5EE328FA10C9519DF6057DA1F69682D28F7D0F5CCC7ECB72E3DCA2D157A4"
+      }
+    }
+  },
+  "STX": {
+    "name": "Stacks",
+    "cmcName": "stacks",
+    "cmcId": 4847,
+    "contracts": {}
+  },
+  "SUSHI": {
+    "name": "SushiSwap",
+    "cmcName": "sushiswap",
+    "cmcId": 6758,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x6b3595068778dd592e39a122f4f5a5cf09c90fe2"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x947950BcC74888a40Ffa2593C5798F11Fc9124C4"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x2995D1317DcD4f0aB89f4AE60F3f020A4F17C7CE"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x0b3f868e0be5597d5db7feb59e1cadbb0fdda50a"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0xae75A438b2E0cB8Bb01Ec1E1e376De11D44477CC"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xd4d42f0b6def4ce0383636770ef773390d85c61a"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x39cf1bd5f15fb22ec3d9ff86b0727afc203427cc"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "6b3595068778dd592e39a122f4f5a5cf09c90fe2.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "AR1Mtgh7zAtxuxGd2XPovXPVjcSdY3i4rQYisNadjfKy"
+      },
+      "1666600000": {
+        "network": "Harmony",
+        "address": "0xbec775cb42abfa4288de81f387a9b1a3c4bc552a"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1csvuzlf92nyemu6tv25h0l79etpe8hz3h5vn4a"
+      },
+      "undefined": {
+        "network": "Celo",
+        "address": "0xd15ec721c2a896512ad29c671997dd68f9593226"
+      }
+    }
+  },
+  "TIA": {
+    "name": "Celestia",
+    "cmcName": "celestia",
+    "cmcId": 22861,
+    "contracts": {
+      "118": {
+        "network": "Cosmos",
+        "address": "ibc/D79E7D83AB399BFFF93433E54FAA480C191248FC556924A2A8351AE2638B3877"
+      }
+    }
+  },
+  "TRAC": {
+    "name": "OriginTrail",
+    "cmcName": "origintrail",
+    "cmcId": 2467,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xaa7a9ca87d3694b5755f213b5d04094b8d0f0a6f"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0xeddd81e0792e764501aae206eb432399a0268db5"
+      }
+    }
+  },
+  "TWT": {
+    "name": "Trust Wallet Token",
+    "cmcName": "trust-wallet-token",
+    "cmcId": 5964,
+    "contracts": {
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x4b0f1812e5df2a09796481ff14017e6005508003"
+      },
+      "97": {
+        "network": "BNB Beacon Chain (BEP2)",
+        "address": "TWT-8C2"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "HZNpqL7RT9gxf9eWoWsWzC5DfjzQ41XTQgEA7p3VzaaD"
+      }
+    }
+  },
+  "UNI": {
+    "name": "Uniswap",
+    "cmcName": "uniswap",
+    "cmcId": 7083,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x1f9840a85d5af5bf1d1762f925bdaddc4201f984"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xbf5140a22578168fd562dccf235e5d43a02ce9b1"
+      },
+      "70": {
+        "network": "Hoo Smart Chain",
+        "address": "0x1fc14e78612edc54e36506c4a11a1a3be4fe48af"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x4537e328bf7e4efa29d05caea260d7fe26af9d74"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0x22c54ce8321a4015740ee1109d9cbc25815c46e6"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0xb33eaad8d922b1083446dc23f610c2567fb5180f"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xFa7F8980b0f1E64A2062791cc3b0871572f1F7f0"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x8eBAf22B6F053dFFeaf46f4Dd9eFA95D89ba8580"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "1f9840a85d5af5bf1d1762f925bdaddc4201f984.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "8FU95xFJhUUkyyCLU13HSzDLs7oC4QZdXQHL6SCeab36"
+      },
+      "null": {
+        "network": "Sora",
+        "address": "0x009be848df92a400da2f217256c88d1a9b1a0304f9b3e90991a67418e1d3b08c"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1wyxkuy5jq545fn7xfn3enpvs5zg9f9dghf6gxf"
+      }
+    }
+  },
+  "USDC": {
+    "name": "USDC",
+    "cmcName": "usd-coin",
+    "cmcId": 3408,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xa0b86991c6218b36c1d19d4a2e9eb0ce3606eb48"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0x7f5c764cbc14f9669b88837ca1490cca17c31607"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0xDDAfbb505ad214D7b80b1f830fcCc89B60fb7A83"
+      },
+      "118": {
+        "network": "Cosmos",
+        "address": "ibc/498A0751C798A0D9A389AA3691123DADA57DAA4FE165D5C75894505B876BA6E4"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x3c499c542cEF5E3811e1192ce70d8cC03d5c3359"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x04068DA6C83AFCFA0e13ba15A6696662335D5B75"
+      },
+      "324": {
+        "network": "zkSync Era",
+        "address": "0x3355df6d4c9c3035724fd0e3914de96a5a83aaf4"
+      },
+      "1088": {
+        "network": "Metis Andromeda",
+        "address": "0xea32a96608495e54156ae48931a7c20f0dcc1a21"
+      },
+      "1101": {
+        "network": "Polygon zkEVM",
+        "address": "0xa8ce8aee21bc2a48a5ef670afcc9274c7bbbc035"
+      },
+      "1284": {
+        "network": "Moonbeam",
+        "address": "0x818ec0a7fe18ff94269904fced6ae3dae6d6dc0b"
+      },
+      "1300": {
+        "network": "Algorand",
+        "address": "31566704"
+      },
+      "2001": {
+        "network": "Milkomeda",
+        "address": "0xB44a9B6905aF7c801311e8F4E76932ee959c663C"
+      },
+      "39797": {
+        "network": "Energi",
+        "address": "0xffd7510ca0a3279c7a5f50018a26c21d5bc1dbcf"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xaf88d065e77c8cC2239327C5EDb3A432268e5831"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xB97EF9Ef8734C71904D8002F8b6Bc66Dd9c48a6E"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "a0b86991c6218b36c1d19d4a2e9eb0ce3606eb48.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "EPjFWdd5AufqSSqeM2qN1xzybapC8G4wEGGkZwyTDt1v"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1pvel56a2hs93yd429pzv9zp5aptcjg5ulhkz7w"
+      },
+      "SN_MAIN": {
+        "network": "Starknet",
+        "address": "0x53c91253bc9682c04929ca02ed00b3e423f6710d2ee7e0d5ebb06f3ecf368a8"
+      }
+    }
+  },
+  "USDT": {
+    "name": "Tether USDt",
+    "cmcName": "tether",
+    "cmcId": 825,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xdac17f958d2ee523a2206206994597c13d831ec7"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0x94b008aa00579c1307b0ef2c499ad98a8ce58e58"
+      },
+      "70": {
+        "network": "Hoo Smart Chain",
+        "address": "0xD16bAbe52980554520F6Da505dF4d1b124c815a7"
+      },
+      "88": {
+        "network": "TomoChain",
+        "address": "0x381b31409e4d220919b2cff012ed94d70135a59e"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x4ECaBa5870353805a9F068101A40E0f32ed605C6"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0xa71edc38d189767582c38a3145b5873052c3e47a"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0xc2132d05d31c914a87c6611c10748aeb04b58e8f"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x049d68029688eabf473097a2fc38ef61633a3c7a"
+      },
+      "1088": {
+        "network": "Metis Andromeda",
+        "address": "0xbb06dca3ae6887fabf931640f67cab3e3a16f4dc"
+      },
+      "1101": {
+        "network": "Polygon zkEVM",
+        "address": "0x1e4a5963abfd975d8c9021ce480b42188849d41d"
+      },
+      "1284": {
+        "network": "Moonbeam",
+        "address": "0xefaeee334f0fd1712f9a8cc375f427d9cdd40d73"
+      },
+      "2001": {
+        "network": "Milkomeda",
+        "address": "0x3795c36e7d12a8c252a20c5a7b455f7c57b60283"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xFd086bC7CD5C481DCC9C85ebE478A1C0b69FCbb9"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x9702230A8Ea53601f5cD2dc00fDBc13d4dF4A8c7"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "dac17f958d2ee523a2206206994597c13d831ec7.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "Es9vMFrzaCERmJfrF4H2FYD4KCoNkY11McCe8BenwNYB"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1ce06wkrdm4vl6t0hvc0g86rsy27pu8yadg3dva"
+      },
+      "SN_MAIN": {
+        "network": "Starknet",
+        "address": "0x68f5c6a61780768455de69077e07e89787839bf8166decfbf92b645209c0fb8"
+      }
+    }
+  },
+  "VRA": {
+    "name": "Verasity",
+    "cmcName": "verasity",
+    "cmcId": 3816,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xf411903cbc70a74d22900a5de66a2dda66507255"
+      }
+    }
+  },
+  "WBNB": {
+    "name": "Wrapped BNB",
+    "cmcName": "wbnb",
+    "cmcId": 7192,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x418D75f65a02b3D53B2418FB8E1fe493759c7605"
+      },
+      "25": {
+        "network": "Cronos",
+        "address": "0xfa9343c3897324496a05fc75abed6bac29f8a40f"
+      },
+      "41": {
+        "network": "Telos",
+        "address": "0x2c78f1b70ccf63cdee49f9233e9faa99d43aa07e"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c"
+      },
+      "70": {
+        "network": "Hoo Smart Chain",
+        "address": "0xa787254704339474A827bd1ee4772c455e3aE7F2"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0xecdcb5b88f8e3c15f95c720c51c71c9e2080525d"
+      },
+      "324": {
+        "network": "zkSync Era",
+        "address": "0x7400793aad94c8ca801aa036357d10f5fd0ce08f"
+      },
+      "1284": {
+        "network": "Moonbeam",
+        "address": "0xc9baa8cfdde8e328787e29b4b078abf2dadc2055"
+      },
+      "2001": {
+        "network": "Milkomeda",
+        "address": "0x7f27352d5f83db87a5a3e00f4b07cc2138d8ee52"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x442F7f22b1EE2c842bEAFf52880d4573E9201158"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "9gP2kCy3wA1ctvYWQk75guqXuHfrEomqydHLtcTCqiLa"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1cetg5wruw2wsdjp7j46rj44xdel00z006e9yg8"
+      }
+    }
+  },
+  "WBTC": {
+    "name": "Wrapped Bitcoin",
+    "cmcName": "wrapped-bitcoin",
+    "cmcId": 3717,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x2260fac5e5542a773aa44fbcfedf7c193bc2c599"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0x68f180fcce6836688e9084f035309e29bf0a2095"
+      },
+      "88": {
+        "network": "TomoChain",
+        "address": "0x503b2ddc059b81788fd1239561596614b27faade"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x1bfd67037b42cf73acf2047067bd4f2c47d9bfd6"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x321162Cd933E2Be498Cd2267a90534A804051b11"
+      },
+      "1088": {
+        "network": "Metis Andromeda",
+        "address": "0xa5B55ab1dAF0F8e1EFc0eB1931a957fd89B918f4"
+      },
+      "1284": {
+        "network": "Moonbeam",
+        "address": "0x922d641a426dcffaef11680e5358f34d97d112e1"
+      },
+      "2001": {
+        "network": "Milkomeda",
+        "address": "0x6ab6d61428fde76768d7b45d8bfeec19c6ef91a8"
+      },
+      "32769": {
+        "network": "Zilliqa",
+        "address": "zil1wha8mzaxhm22dpm5cav2tepuldnr8kwkvmqtjq"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x2f2a2543B76A4166549F7aaB2e75Bef0aefC5B0f"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x408d4cd0adb7cebd1f1a1c33a0ba2098e1295bab"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "2260fac5e5542a773aa44fbcfedf7c193bc2c599.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "3NZ9JMVBmGAqocybic2c7LQCJScmgsAZ6vQqTDzcqmJh"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1aa7upykmmqqc63l924l5qfap8mrmx5rfdm0v55"
+      },
+      "SN_MAIN": {
+        "network": "Starknet",
+        "address": "0x3fe2b97c1fd336e750087d68b9b867997fd64a2661ff3ca5a7c771641e8e7ac"
+      }
+    }
+  },
+  "WETH": {
+    "name": "WETH",
+    "cmcName": "weth",
+    "cmcId": 2396,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xc02aaa39b223fe8d0a0e5c4f27ead9083c756cc2"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0x4200000000000000000000000000000000000006"
+      },
+      "25": {
+        "network": "Cronos",
+        "address": "0xe44Fd7fCb2b1581822D0c862B68222998a0c299a"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x4DB5a66E937A9F4473fA95b1cAF1d1E1D62E29EA"
+      },
+      "70": {
+        "network": "Hoo Smart Chain",
+        "address": "0xA1588dC914e236bB5AE4208Ce3081246f7A00193"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0x6a023ccd1ff6f2045c3309768ead9e68f978f6e1"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x7ceb23fd6bc0add59e62ac25578270cff1b9f619"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x74b23882a30290451A17c44f4F05243b6b58C76d"
+      },
+      "324": {
+        "network": "zkSync Era",
+        "address": "0x5aea5775959fbc2557cc8789bc1bf90a239d9a91"
+      },
+      "1088": {
+        "network": "Metis Andromeda",
+        "address": "0x420000000000000000000000000000000000000a"
+      },
+      "1101": {
+        "network": "Polygon zkEVM",
+        "address": "0x4f9a0e7fd2bf6067db6994cf12e4495df938e6e9"
+      },
+      "1284": {
+        "network": "Moonbeam",
+        "address": "0xfa9343c3897324496a05fc75abed6bac29f8a40f"
+      },
+      "2001": {
+        "network": "Milkomeda",
+        "address": "0x81ecac0d6be0550a00ff064a4f9dd2400585fe9c"
+      },
+      "8453": {
+        "network": "Base",
+        "address": "0x4200000000000000000000000000000000000006"
+      },
+      "32769": {
+        "network": "Zilliqa",
+        "address": "zil19j33tapjje2xzng7svslnsjjjgge930jx0w09v"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x82af49447d8a07e3bd95bd0d56f35241523fbab1"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x49D5c2BdFfac6CE2BFdB6640F4F80f226bc10bAB"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "c02aaa39b223fe8d0a0e5c4f27ead9083c756cc2.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "7vfCXTUXx5WJV5JADk17DUJ4ksgau7utNKj4b963voxs"
+      },
+      "1666600000": {
+        "network": "Harmony",
+        "address": "0x6983d1e6def3690c4d616b13597a09e6193ea013"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra14tl83xcwqjy0ken9peu4pjjuu755lrry2uy25r"
+      }
+    }
+  },
+  "WLD": {
+    "name": "Worldcoin",
+    "cmcName": "worldcoin-org",
+    "cmcId": 13502,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x163f8c2467924be0ae7b5347228cabf260318753"
+      },
+      "10": {
+        "network": "Optimism",
+        "address": "0xdc6ff44d5d932cbd77b52e5612ba0529dc6226f1"
+      }
+    }
+  },
+  "WMATIC": {
+    "name": "Wrapped Matic",
+    "cmcName": "wmatic",
+    "cmcId": 8925,
+    "contracts": {
+      "41": {
+        "network": "Telos",
+        "address": "0x332730a4f6e03d9c55829435f10360e13cfa41ff"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xc836d8dC361E44DbE64c4862D55BA041F88Ddd39"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x0d500b1d8e8ef31e21c99d1db9a6444d3adf1270"
+      },
+      "324": {
+        "network": "zkSync Era",
+        "address": "0x28a487240e4d45cff4a2980d334cc933b7483842"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xf2f13f0B7008ab2FA4A2418F4ccC3684E49D20Eb"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "Gz7VkD4MacbEB6yC5XD3HcumEiYx2EtDYYrfikGsvopG"
+      },
+      "columbus-5": {
+        "network": "Terra Classic",
+        "address": "terra1dtqlfecglk47yplfrtwjzyagkgcqqngd5lgjp8"
+      }
+    }
+  },
+  "WOO": {
+    "name": "WOO Network",
+    "cmcName": "wootrade",
+    "cmcId": 7501,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x4691937a7508860f876c9c0a2a617e7d9e945d4b"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x4691937a7508860f876c9c0a2a617e7d9e945d4b"
+      },
+      "66": {
+        "network": "OKExChain",
+        "address": "0x5427a224E50A9aF4d030AeeCD2a686D41F348DFE"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0x3befb2308bce92da97264077faf37dcd6c8a75e6"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x1B815d120B3eF02039Ee11dC2d33DE7aA4a8C603"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x6626c47c00F1D87902fc13EECfaC3ed06D5E8D8a"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xcafcd85d8ca7ad1e1c6f82f651fa15e33aefd07b"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xabc9547b534519ff73921b1fba6e672b5f58d083"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "4691937a7508860f876c9c0a2a617e7d9e945d4b.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "E5rk3nmgLUuKUiS94gg4bpWwWwyjCMtddsAXkTFLtHEy"
+      }
+    }
+  },
+  "WSTETH": {
+    "name": "Lido wstETH",
+    "cmcName": "lido-finance-wsteth",
+    "cmcId": 12409,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x7f39c581f595b53c5cb19bd0b3f8da6c935e2ca0"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x03b54a6e9a984069379fae1a4fc4dbae93b3bccd"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x5979D7b546E38E414F7E9822514be443A4800529"
+      }
+    }
+  },
+  "XCAD": {
+    "name": "XCAD Network",
+    "cmcName": "xcad-network",
+    "cmcId": 9868,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x7659ce147d0e714454073a5dd7003544234b6aa0"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0xa026ad2ceda16ca5fc28fd3c72f99e2c332c8a26"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0xa55870278d6389ec5b524553d03c04f5677c061e"
+      },
+      "1088": {
+        "network": "Metis Andromeda",
+        "address": "0x66673f0a3b5d99524bA76A558B93A9ca1386f4Cd"
+      },
+      "32769": {
+        "network": "Zilliqa",
+        "address": "zil1z5l74hwy3pc3pr3gdh3nqju4jlyp0dzkhq2f5y"
+      }
+    }
+  },
+  "XDC": {
+    "name": "XDC Network",
+    "cmcName": "xdc-network",
+    "cmcId": 2634,
+    "contracts": {}
+  },
+  "XLM": {
+    "name": "Stellar",
+    "cmcName": "stellar",
+    "cmcId": 512,
+    "contracts": {}
+  },
+  "XRP": {
+    "name": "XRP",
+    "cmcName": "xrp",
+    "cmcId": 52,
+    "contracts": {
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x1d2f0da169ceb9fc7b3144628db156f3f6c60dbe"
+      }
+    }
+  },
+  "XTZ": {
+    "name": "Tezos",
+    "cmcName": "tezos",
+    "cmcId": 2011,
+    "contracts": {
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x16939ef78684453bfdfb47825f8a5f714f12623a"
+      },
+      "undefined": {
+        "network": "Tezos",
+        "address": "Tez"
+      }
+    }
+  },
+  "YFI": {
+    "name": "yearn.finance",
+    "cmcName": "yearn-finance",
+    "cmcId": 5864,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x0bc529c00c6401aef6d220be8c6ea1667f6ad93e"
+      },
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x88f1a5ae2a3bf98aeaf342d26b30a79438c9142e"
+      },
+      "100": {
+        "network": "Gnosis Chain",
+        "address": "0xbf65bfcb5da067446CeE6A706ba3Fe2fB1a9fdFd"
+      },
+      "128": {
+        "network": "HECO",
+        "address": "0xb4f019beac758abbee2f906033aaa2f0f6dacb35"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x29b0Da86e484E1C0029B56e817912d778aC0EC69"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0x82e3A8F066a6989666b031d916c43672085b1582"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0x9eAaC1B23d935365bD7b542Fe22cEEe2922f52dc"
+      },
+      "1313161554": {
+        "network": "Near",
+        "address": "0bc529c00c6401aef6d220be8c6ea1667f6ad93e.factory.bridge.near"
+      },
+      "1399811149": {
+        "network": "Solana",
+        "address": "BXZX2JRJFjvKazM1ibeDFxgAngKExb74MRXzXKvgikxX"
+      }
+    }
+  },
+  "ZRX": {
+    "name": "0x Protocol",
+    "cmcName": "0x",
+    "cmcId": 1896,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0xe41d2489571d322189246dafa5ebde1f4699f498"
+      }
+    }
+  },
+  "axlUSDC": {
+    "name": "Axelar Wrapped USDC",
+    "cmcName": "axlusdc",
+    "cmcId": 21420,
+    "contracts": {
+      "56": {
+        "network": "BNB Smart Chain (BEP20)",
+        "address": "0x4268B8F0B87b6Eae5d897996E6b845ddbD99Adf3"
+      },
+      "118": {
+        "network": "Cosmos",
+        "address": "ibc/D189335C6E4A68B513C10AB227BF1C1D38C746766278BA3EEB4FB14124F1D858"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x750e4C4984a9e0f12978eA6742Bc1c5D248f40ed"
+      },
+      "250": {
+        "network": "Fantom",
+        "address": "0x1B6382DBDEa11d97f24495C9A90b7c88469134a4"
+      },
+      "1284": {
+        "network": "Moonbeam",
+        "address": "0xca01a1d0993565291051daff390892518acfad3a"
+      },
+      "8453": {
+        "network": "Base",
+        "address": "0xeb466342c4d449bc9f53a865d5cb90586f405215"
+      },
+      "9001": {
+        "network": "Evmos",
+        "address": "0x15c3eb3b621d1bff62cba1c9536b7c1ae9149b57"
+      },
+      "42161": {
+        "network": "Arbitrum",
+        "address": "0xEB466342C4d449BC9f53A865D5Cb90586f405215"
+      },
+      "43114": {
+        "network": "Avalanche C-Chain",
+        "address": "0xfaB550568C688d5D8A52C7d794cb93Edc26eC0eC"
+      }
+    }
+  },
+  "stMATIC": {
+    "name": "Lido Staked Matic",
+    "cmcName": "lido-staked-matic",
+    "cmcId": 18688,
+    "contracts": {
+      "1": {
+        "network": "Ethereum",
+        "address": "0x9ee91F9f426fA633d227f7a9b000E28b9dfd8599"
+      },
+      "137": {
+        "network": "Polygon",
+        "address": "0x3A58a54C066FdC0f2D55FC9C89F0415C92eBf3C4"
+      }
+    }
+  }
+}

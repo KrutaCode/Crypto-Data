@@ -1,7 +1,6 @@
 require('dotenv').config({ path: 'D:/CryptoData/crypto-data/.env' });
 const Web3 = require('web3');
-const { chainIds } = require('./chainIds.js');
-const { idToNetworkName, decimalPaths } = require('./dataPaths.js');
+const { chainIds, idToNetworkName } = require('./chainIds.js');
 const fs = require('fs');
 const util = require('util');
 const axios = require('axios');
@@ -46,7 +45,6 @@ class DataManager {
      */
     async getTokenAddress(_symbol, _chainId, _writeAddresses = true) {
         const networkName = await this.getNetworkName(_chainId);
-        console.log(`Network: ${networkName}`);
         const filePath = `${basePath}/network-data/${networkName}/tokens/${networkName}_token_addresses.json`;
         let jsonData = await readFile(filePath);
         jsonData = JSON.parse(jsonData);
@@ -630,19 +628,3 @@ class DataManager {
 module.exports = {
     DataManager,
 };
-
-async function main() {
-    const dataManager = new DataManager();
-    //console.log(await dataManager.getTokenAddress('WETH', 1));
-    //const decimals = await dataManager.getTokenDecimals('DAI', 1);
-    const poolAddress = await dataManager.getPoolAddress(
-        'WMATIC',
-        'WETH',
-        137,
-        500,
-        (_dex = 'sushiswap'),
-        (_findCheapest = false)
-    );
-}
-
-//main();
