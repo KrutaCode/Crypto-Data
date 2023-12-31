@@ -1,0 +1,6 @@
+{
+    "exchangeName": "sushiswap",
+    "network": "avalanche-c-chain",
+    "factoryAddress": "0x3e603C14aF37EBdaD31709C4f848Fc6aD5BEc715",
+    "routerAddress": "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506"
+}

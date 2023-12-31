@@ -1,6 +1,6 @@
 {
     "exchangeName": "sushiswap",
-    "network": "polygon-pos",
-    "factoryAddress": "0x917933899c6a5F8E37F31E19f92CdBFF7e8FF0e2",
+    "network": "arbitrum-one",
+    "factoryAddress": "0x1af415a1EbA07a4986a52B6f2e7dE7003D82231e",
     "routerAddress": "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506"
 }

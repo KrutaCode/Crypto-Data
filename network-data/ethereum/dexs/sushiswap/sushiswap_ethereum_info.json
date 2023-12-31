@@ -1,0 +1,6 @@
+{
+    "exchangeName": "sushiswap",
+    "network": "ethereum",
+    "factoryAddress": "0xbACEB8eC6b9355Dfc0269C18bac9d6E2Bdc29C4F",
+    "routerAddress": "0xDdC1b5920723F774d2Ec2C3c9355251A20819776"
+}

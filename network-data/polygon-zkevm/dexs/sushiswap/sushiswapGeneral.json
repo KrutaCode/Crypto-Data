@@ -1,9 +1,0 @@
-{
-    "exchangeName": "sushiswap",
-    "network": "polygon zkEVM",
-    "factoryAddress": "0x1b02dA8Cb0d097eB8D57A175b88c7D8b47997506",
-    "routerAddress": "0xFB7eF66a7e61224DD6FcD0D7d9C3be5C8B049b9f",
-    "pools": {
-
-    }
-}
