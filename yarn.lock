@@ -427,6 +427,10 @@
   resolved "https://registry.yarnpkg.com/@uniswap/v3-core/-/v3-core-1.0.1.tgz#b6d2bdc6ba3c3fbd610bdc502395d86cd35264a0"
   integrity sha512-7pVk4hEm00j9tc71Y9+ssYpO6ytkeI0y7WE9P6UcmNzhxPePwyAxImuhVsTqWK9YFvzgtvzJHi64pBl4jUzKMQ==
 
+"@uniswap/v3-core@sushiswap/v3-core":
+  version "1.0.1"
+  resolved "https://codeload.github.com/sushiswap/v3-core/tar.gz/c7bff209a3c0c5ac32c25c536e2a46f24616efaf"
+
 "@uniswap/v3-periphery@^1.4.4":
   version "1.4.4"
   resolved "https://registry.yarnpkg.com/@uniswap/v3-periphery/-/v3-periphery-1.4.4.tgz#d2756c23b69718173c5874f37fd4ad57d2f021b7"

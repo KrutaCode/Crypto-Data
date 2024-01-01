@@ -5,6 +5,7 @@ const util = require('util');
 const readFile = util.promisify(fs.readFile);
 
 const { UtilitiesInterface } = require('../utils/utilitiesInterface.js');
+const path = require('path');
 const fileName = 'localData.js';
 
 // Path to token Decimals
@@ -22,9 +23,10 @@ class LocalData {
 
     /** --------------------------------- Token Attributes --------------------------------- */
     /**
-     * @description
-     * @param
-     * @returns
+     * @description Returns the address of the token.
+     * @param _symbol Ticker symbol of the token.
+     * @param _chainId Id of the blockchain network.
+     * @returns String
      */
     async getTokenAddress(_symbol, _chainId) {
         const networkName = await this.utils.getNetworkName(_chainId);
@@ -53,6 +55,19 @@ class LocalData {
         }
     }
     /** --------------------------------- Dex Attributes --------------------------------- */
+    /**
+     * @description Get the ABIs associated with the DEX.
+     * @param _dex Name of the decentralized exchange (DEX).
+     * @param _chainId Id of the blockchain network.
+     * @returns Json
+     */
+    async getDexAbis(_dex, _chainId) {
+        const networkName = await this.utils.getNetworkName(_chainId);
+        const pathToDex = `${process.env.BASE_PATH}/network-data/${networkName}/dexs/${_dex}/${_dex}_${networkName}_abi.json`;
+        let jsonData = await readFile(pathToDex);
+        jsonData = await JSON.parse(jsonData);
+        return jsonData;
+    }
     /**
      * @description Retrieve the address of the main factory that the specified decentralized exchange uses.
      * @param _dex Name of the decentralized exchange.
@@ -180,11 +195,43 @@ class LocalData {
         }
     }
 
+    /** --------------------------------- Oracle Attributes --------------------------------- */
+    /**
+     * @description Return the associated ABI for the oracle.
+     * @param _chainId Id of the blockchain network.
+     * @returns Json
+     */
+    async getOracleAbis(_chainId) {
+        const networkName = await this.utils.getNetworkName(_chainId);
+        const pathToOracle = `${process.env.BASE_PATH}/network-data/${networkName}/oracles/chainlink/abis/chainlink_${networkName}_abi.json`;
+        let jsonData = await readFile(pathToOracle);
+        jsonData = await JSON.parse(jsonData);
+        return jsonData;
+    }
+    /**
+     * @description Return the address associated with the price feed.
+     * @param _symbol0 Token to check the price of.
+     * @param _symbol1 Token that _symbol0 will be quoted in.
+     * @param _chainId Id of the blockchain network.
+     * @returns String
+     */
+    async getOraclePriceFeed(_symbol0, _symbol1, _chainId) {
+        const networkName = await this.utils.getNetworkName(_chainId);
+        const pathToOracle = `${process.env.BASE_PATH}/network-data/${networkName}/oracles/chainlink/price-feeds/chainlink_${networkName}_price_feeds.json`;
+        let jsonData = await readFile(pathToOracle);
+        console.log(`FilePath: ${pathToOracle}`);
+        console.log(`Json: ${jsonData}`);
+        //console.log(`JSON: ${JSON.stringify(jsonData, null, 2)}`);
+        jsonData = await JSON.parse(jsonData);
+        console.log(`SYmbol: ${_symbol0}   ${_symbol1}`);
+        console.log(`Json: ${jsonData[_symbol0]}`);
+        return jsonData[_symbol0][_symbol1];
+    }
     /**---------------------------------- Pool Utilities ----------------------------------*/
     /**
      * @description Takes the fee tiers for a pool, and returns the cheapest available one.
      * @param _feeTiers JSON of the fee-tier and associated addresses.
-     * @return String of the address for the cheapest fee tier.
+     * @returns String of the address for the cheapest fee tier.
      */
     async getCheapestPool(_feeTiers) {
         // Iterate through the json. Return the first tier that is not null.

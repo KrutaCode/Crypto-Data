@@ -1,0 +1,14 @@
+{
+    "BTC": {
+        "USD": "0x007A22900a3B98143368Bd5906f8E17e9867581b"
+    },
+    "DAI": {
+        "USD": "0x0FCAa9c899EC5A91eBc3D5Dd869De833b06fB046"
+    },
+    "ETH": {
+        "USD": "0x0715A7794a1dc8e42615F059dD6e406A6594651A"
+    },
+    "LINK": {
+        "USD": "0x1C2252aeeD50e0c9B64bDfF2735Ee3C932F5C408"
+    }
+}

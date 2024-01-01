@@ -1,41 +1,38 @@
 {
-  "stMATIC": {
-    "MATICX": {
-      "100": "null",
-      "500": "0x47a2114c4a4ef52da7547057ebada0d7072c1dcf",
-      "3000": "null",
-      "10000": "null"
-    }
-  },
-  "WMATIC": {
-    "MATICX": {
-      "100": "0x64a86ff7ade343003c8b7e966651ae33b0b47cde",
-      "500": "null",
-      "3000": "0xa0f8657c0242eedaef5d04798b1b551a4a2d3e66",
-      "10000": "null"
-    },
     "stMATIC": {
-      "100": "null",
-      "500": "null",
-      "3000": "0x9b9b6192f4adcbf039c1b07aa5b237d55871301d",
-      "10000": "null"
+        "MATICX": {
+            "100": "null",
+            "500": "0x47a2114c4a4ef52da7547057ebada0d7072c1dcf",
+            "3000": "null",
+            "10000": "null"
+        }
     },
-    "WETH": {
-      "100": "null",
-      "500": "null",
-      "3000": "null",
-      "10000": "null"
-    }
-  },
-  "LINK": {
-    "USDC": {
-      "100": "null",
-      "500": "null",
-      "3000": "null",
-      "10000": "null"
+    "WMATIC": {
+        "MATICX": {
+            "100": "0x64a86ff7ade343003c8b7e966651ae33b0b47cde",
+            "500": "null",
+            "3000": "0xa0f8657c0242eedaef5d04798b1b551a4a2d3e66",
+            "10000": "null"
+        },
+        "stMATIC": {
+            "100": "null",
+            "500": "null",
+            "3000": "0x9b9b6192f4adcbf039c1b07aa5b237d55871301d",
+            "10000": "null"
+        },
+        "WETH": {
+            "100": "null",
+            "500": "null",
+            "3000": "null",
+            "10000": "null"
+        }
     },
-    "USDC.e": {
-      "3000": "null"
+    "LINK": {
+        "USDC": {
+            "100": "null",
+            "500": "null",
+            "3000": "null",
+            "10000": "null"
+        }
     }
-  }
 }

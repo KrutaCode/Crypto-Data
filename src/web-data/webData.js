@@ -9,10 +9,9 @@ const {
 } = require('@uniswap/v3-core/artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json');
 
 // Uniswap Factory Abi import
-const {
-    abi: FactoryAbi,
-} = require('@uniswap/v3-core/artifacts/contracts/UniswapV3Factory.sol/UniswapV3Factory.json');
+//
 
+// console.log(`FactoryABI: ${JSON.stringify(FactoryAbi, null, 2)}`);
 const cmcCases = {
     'USDC.e': 'USDCE',
 };
@@ -103,6 +102,7 @@ class WebData {
         _address1,
         _feeTier,
         _factoryAddress,
+        _factoryAbi,
         _chainId
     ) {
         // Set up the provider
@@ -112,7 +112,7 @@ class WebData {
         // Factory setup.
         const factory = new ethers.Contract(
             _factoryAddress,
-            FactoryAbi,
+            _factoryAbi,
             provider
         );
 

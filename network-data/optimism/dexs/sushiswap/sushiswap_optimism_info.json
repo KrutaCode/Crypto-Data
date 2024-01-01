@@ -2,5 +2,6 @@
     "exchangeName": "sushiswap",
     "network": "optimism",
     "factoryAddress": "0x9c6522117e2ed1fE5bdb72bb0eD5E3f2bdE7DBe0",
-    "routerAddress": "0xE52180815c81D7711B83412e53259bed6a3aB70a"
+    "routerAddress": "0xE52180815c81D7711B83412e53259bed6a3aB70a",
+    "quoterAddress": "0xb1E835Dc2785b52265711e17fCCb0fd018226a6e"
 }

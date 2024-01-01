@@ -2,5 +2,6 @@
     "exchangeName": "sushiswap",
     "network": "binance-smart-chain",
     "factoryAddress": "0x126555dd55a39328F69400d6aE4F782Bd4C34ABb",
-    "routerAddress": "0x97a32B4f8486735075f2cBEcff64208fBF2e610A"
+    "routerAddress": "0x97a32B4f8486735075f2cBEcff64208fBF2e610A",
+    "quoterAddress": "0xb1E835Dc2785b52265711e17fCCb0fd018226a6e"
 }
