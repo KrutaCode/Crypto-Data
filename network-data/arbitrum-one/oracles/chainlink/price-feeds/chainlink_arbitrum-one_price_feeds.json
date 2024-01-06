@@ -1,0 +1,39 @@
+{
+    "ARB": {
+        "ETH": "",
+        "USD": "0xb2a824043730fe05f3da2efafa1cbbe83fa548d6"
+    },
+    "CRV": {
+        "ETH": "0x8a12be339b0cd1829b91adc01977caa5e9ac121e",
+        "USD": "0xaebda2c976cfd1ee1977eac079b4382acb849325"
+    },
+    "LINK": {
+        "ETH": "null",
+        "USD": "0x86e53cf1b870786351da77a57575e79cb55812cb"
+    },
+    "MATIC": {
+        "ETH": "null",
+        "USD": "0x52099d4523531f678dfc568a7b1e5038aadce1d6"
+    },
+    "rETH": {
+        "ETH": "0xf3272cafe65b190e76caaf483db13424a3e23dd2",
+        "USD": ""
+    },
+    "stETH": {
+        "ETH": "0xded2c52b75b24732e9107377b7ba93ec1ffa4baf",
+        "USD": "0x07c5b924399cc23c24a95c8743de4006a32b7f2a"
+    },
+    "WBTC": {
+        "ETH": "0xc5a90a6d7e4af242da238ffe279e9f2ba0c64b2e",
+        "USD": "0x6ce185860a4963106506c203335a2910413708e9"
+    },
+    "WETH": {
+        "ETH": "",
+        "USD": "0x639fe6ab55c921f74e7fac1ee960c0b6293ba612"
+    },
+    "wstETH": {
+        "ETH": "0xb523ae262d20a936bc152e6023996e46fdc2a95d",
+        "stETH": "0xb1552c5e96b312d0bf8b554186f846c40614a540",
+        "USD": ""
+    }
+}

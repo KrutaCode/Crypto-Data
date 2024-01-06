@@ -4,9 +4,9 @@ const axios = require('axios');
 
 const fileName = 'webData.js';
 // Uniswap Pool Abi
-const {
-    abi: PoolAbi,
-} = require('@uniswap/v3-core/artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json');
+// const {
+//     abi: PoolAbi,
+// } = require('@uniswap/v3-core/artifacts/contracts/UniswapV3Pool.sol/UniswapV3Pool.json');
 
 // Uniswap Factory Abi import
 //
@@ -23,7 +23,13 @@ const {
 } = require('../utils/utilitiesInterface.js');
 
 // Import erc20 abi.
-const tokenAbi = require('../../token-standards/abis/erc20Abi.json');
+const tokenAbi = require('../../static-data/tokens/abi/erc20Abi.json');
+
+// Maps the chain id to the blockchain scanners website.
+const idToScanner = {
+    1: 'https://api.etherscan.io',
+    137: 'https://api.polygonscan.com',
+};
 
 class WebData {
     logErrors;
@@ -124,6 +130,17 @@ class WebData {
         );
         console.log(`Pool Address: ${poolAddress}`);
         return poolAddress;
+    }
+    /**
+     * @description
+     * @param
+     * @returns
+     */
+    async getContractAbi(_address) {
+        const url = `https://api.etherscan.io/api?module=contract&action=getabi&address=${_address}&apikey=${process.env.ETHERSCAN_API_KEY}`;
+        const res = await axios.get(url);
+        const abi = JSON.parse(res.data.result);
+        return abi;
     }
 }
 

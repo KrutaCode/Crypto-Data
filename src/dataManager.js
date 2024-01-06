@@ -22,7 +22,6 @@ class DataManager {
 
         // If address not found locally, get it from web.
         if (address === null) {
-            console.log('TAG1');
             let addressData = await this.webData.queryTokenAddresses(_symbol);
             address = addressData.address[_chainId];
             // Write locally.
@@ -66,7 +65,6 @@ class DataManager {
             _dex,
             _chainId
         );
-        console.log(`Pool1:  ${poolAddress}`);
         if (poolAddress === undefined) {
             // Get the address of the tokens.
             const address0 = this.getTokenAddress(_symbol0, _chainId);
@@ -78,7 +76,6 @@ class DataManager {
             const factoryAbi = await this.localData.getDexAbis(_dex, _chainId)[
                 'factoryAbi'
             ];
-            console.log(`Factory:  ${factoryAddress}`);
             poolAddress = await this.webData.queryPoolAddress(
                 address0,
                 address1,
@@ -87,7 +84,6 @@ class DataManager {
                 factoryAbi,
                 _chainId
             );
-            console.log(`Pool2:  ${poolAddress}`);
             // Write locally
             this.localData.writeTokenPairToPool(
                 _symbol0,

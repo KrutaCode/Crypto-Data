@@ -8,8 +8,12 @@ const { UtilitiesInterface } = require('../utils/utilitiesInterface.js');
 const path = require('path');
 const fileName = 'localData.js';
 
+// const {
+//     abi: aggregatorAbi,
+// } = require('@chainlink/contracts/src/v0.6/interfaces/AggregatorV3Interface.sol/AggregatorV3Interface.json');
+
 // Path to token Decimals
-const tokenDecimalsPath = `${process.env.BASE_PATH}/token-standards/decimals/tokenDecimals.json`;
+const tokenDecimalsPath = `${process.env.BASE_PATH}/static-data/tokens/decimals/tokenDecimals.json`;
 
 // Address representing "null".
 const nullAddress = '0x0000000000000000000000000000000000000000';
@@ -165,9 +169,7 @@ class LocalData {
         // Override _feeTier, and return the cheapest tier.
         if (_findCheapest) {
             try {
-                console.log('TAG1');
                 const feeTiers = jsonData[_symbol0][_symbol1];
-                console.log('TAG2');
                 const poolAddress = this.getCheapestPool(feeTiers);
                 return poolAddress;
             } catch (error) {
@@ -180,9 +182,7 @@ class LocalData {
             }
         } else {
             try {
-                console.log('TAG1');
                 const poolAddress = jsonData[_symbol0][_symbol1][_feeTier];
-                console.log('TAG2');
                 return poolAddress;
             } catch (error) {
                 if (this.logErrors) {
@@ -201,12 +201,11 @@ class LocalData {
      * @param _chainId Id of the blockchain network.
      * @returns Json
      */
-    async getOracleAbis(_chainId) {
-        const networkName = await this.utils.getNetworkName(_chainId);
-        const pathToOracle = `${process.env.BASE_PATH}/network-data/${networkName}/oracles/chainlink/abis/chainlink_${networkName}_abi.json`;
-        let jsonData = await readFile(pathToOracle);
+    async getOracleAbis(_abi = 'aggregatorV3InterfaceAbi') {
+        const pathToOracle = `${process.env.BASE_PATH}/static-data/oracles/chainlink/abi/chainlink_abi.json`;
+        let jsonData = await readFile(pathToOracle, 'utf-8');
         jsonData = await JSON.parse(jsonData);
-        return jsonData;
+        return jsonData[_abi];
     }
     /**
      * @description Return the address associated with the price feed.
@@ -219,12 +218,8 @@ class LocalData {
         const networkName = await this.utils.getNetworkName(_chainId);
         const pathToOracle = `${process.env.BASE_PATH}/network-data/${networkName}/oracles/chainlink/price-feeds/chainlink_${networkName}_price_feeds.json`;
         let jsonData = await readFile(pathToOracle);
-        console.log(`FilePath: ${pathToOracle}`);
-        console.log(`Json: ${jsonData}`);
         //console.log(`JSON: ${JSON.stringify(jsonData, null, 2)}`);
         jsonData = await JSON.parse(jsonData);
-        console.log(`SYmbol: ${_symbol0}   ${_symbol1}`);
-        console.log(`Json: ${jsonData[_symbol0]}`);
         return jsonData[_symbol0][_symbol1];
     }
     /**---------------------------------- Pool Utilities ----------------------------------*/
