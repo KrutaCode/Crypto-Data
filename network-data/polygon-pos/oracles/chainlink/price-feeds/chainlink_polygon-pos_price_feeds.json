@@ -1,54 +1,126 @@
 {
     "1INCH": {
-        "USD": "0x443C5116CdF663Eb387e72C688D276e702135C87"
+        "USD": {
+            "address": "0x443C5116CdF663Eb387e72C688D276e702135C87",
+            "deviation": "null"
+        }
     },
     "AAVE": {
-        "ETH": "0xbE23a3AA13038CfC28aFd0ECe4FdE379fE7fBfc4",
-        "USD": "0x72484B12719E23115761D5DA1646945632979bB6"
+        "ETH": {
+            "address": "0xbE23a3AA13038CfC28aFd0ECe4FdE379fE7fBfc4",
+            "deviation": "null"
+        },
+        "USD": {
+            "address": "0x72484B12719E23115761D5DA1646945632979bB6",
+            "deviation": "null"
+        }
     },
     "CRV": {
-        "ETH": "0x1CF68C76803c9A415bE301f50E82e44c64B7F1D4",
-        "USD": "0x336584C8E6Dc19637A5b36206B1c79923111b405"
+        "ETH": {
+            "address": "0x1CF68C76803c9A415bE301f50E82e44c64B7F1D4",
+            "deviation": "null"
+        },
+        "USD": {
+            "address": "0x336584C8E6Dc19637A5b36206B1c79923111b405",
+            "deviation": "null"
+        }
     },
     "DAI": {
-        "ETH": "0xFC539A559e170f848323e19dfD66007520510085",
-        "USD": "0x4746DeC9e833A82EC7C2C1356372CcF2cfcD2F3D"
+        "ETH": {
+            "address": "0xFC539A559e170f848323e19dfD66007520510085",
+            "deviation": "null"
+        },
+        "USD": {
+            "address": "0x4746DeC9e833A82EC7C2C1356372CcF2cfcD2F3D",
+            "deviation": "null"
+        }
     },
     "LINK": {
-        "ETH": "0xb77fa460604b9C6435A235D057F7D319AC83cb53",
-        "USD": "0xd9FFdb71EbE7496cC440152d43986Aae0AB76665",
-        "WMATIC": "0x5787BefDc0ECd210Dfa948264631CD53E68F7802"
+        "ETH": {
+            "address": "0xb77fa460604b9C6435A235D057F7D319AC83cb53",
+            "deviation": "null"
+        },
+        "USD": {
+            "address": "0xd9FFdb71EbE7496cC440152d43986Aae0AB76665",
+            "deviation": "null"
+        },
+        "WMATIC": {
+            "address": "0x5787BefDc0ECd210Dfa948264631CD53E68F7802",
+            "deviation": "null"
+        }
     },
     "MATICX": {
-        "USD": "0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403"
+        "USD": {
+            "address": "0x5d37E4b374E6907de8Fc7fb33EE3b0af403C7403",
+            "deviation": "null"
+        }
     },
     "QNT": {
-        "USD": "0xF7F291042F6Cbc4deC0Ad75c17786511a530dbe8"
+        "USD": {
+            "address": "0xF7F291042F6Cbc4deC0Ad75c17786511a530dbe8",
+            "deviation": "null"
+        }
     },
     "stMATIC": {
-        "USD": "0x97371dF4492605486e23Da797fA68e55Fc38a13f"
+        "USD": {
+            "address": "0x97371dF4492605486e23Da797fA68e55Fc38a13f",
+            "deviation": "null"
+        }
     },
     "USDC": {
-        "ETH": "0xefb7e6be8356cCc6827799B6A7348eE674A80EaE",
-        "USD": "0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7"
+        "ETH": {
+            "address": "0xefb7e6be8356cCc6827799B6A7348eE674A80EaE",
+            "deviation": "null"
+        },
+        "USD": {
+            "address": "0xfE4A8cc5b5B2366C1B58Bea3858e81843581b2F7",
+            "deviation": "null"
+        }
     },
     "USDT": {
-        "ETH": "0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d",
-        "USD": "0x0A6513e40db6EB1b165753AD52E80663aeA50545"
+        "ETH": {
+            "address": "0xf9d5AAC6E5572AEFa6bd64108ff86a222F69B64d",
+            "deviation": "null"
+        },
+        "USD": {
+            "address": "0x0A6513e40db6EB1b165753AD52E80663aeA50545",
+            "deviation": "null"
+        }
     },
     "WBTC": {
-        "ETH": "0x19b0F0833C78c0848109E3842D34d2fDF2cA69BA",
-        "USD": "0xc907E116054Ad103354f2D350FD2514433D57F6f"
+        "ETH": {
+            "address": "0x19b0F0833C78c0848109E3842D34d2fDF2cA69BA",
+            "deviation": "null"
+        },
+        "USD": {
+            "address": "0xc907E116054Ad103354f2D350FD2514433D57F6f",
+            "deviation": "null"
+        }
     },
     "WETH": {
-        "USD": "0xF9680D99D6C9589e2a93a78A04A279e509205945"
+        "USD": {
+            "address": "0xF9680D99D6C9589e2a93a78A04A279e509205945",
+            "deviation": "null"
+        }
     },
     "WMATIC": {
-        "ETH": "0x327e23A4855b6F663a28c5161541d69Af8973302",
-        "USD": "0xAB594600376Ec9fD91F8e885dADF0CE036862dE0"
+        "ETH": {
+            "address": "0x327e23A4855b6F663a28c5161541d69Af8973302",
+            "deviation": "null"
+        },
+        "USD": {
+            "address": "0xAB594600376Ec9fD91F8e885dADF0CE036862dE0",
+            "deviation": "null"
+        }
     },
     "wstETH": {
-        "ETH": "0x10f964234cae09cB6a9854B56FF7D4F38Cda5E6a",
-        "stETH": "0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c"
+        "ETH": {
+            "address": "0x10f964234cae09cB6a9854B56FF7D4F38Cda5E6a",
+            "deviation": "null"
+        },
+        "stETH": {
+            "address": "0x3Ea1eC855fBda8bA0396975eC260AD2e9B2Bc01c",
+            "deviation": "null"
+        }
     }
 }

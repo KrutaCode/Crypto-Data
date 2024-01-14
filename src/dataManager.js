@@ -101,6 +101,23 @@ class DataManager {
             return poolAddress;
         }
     }
+    /** --------------------------------- Oracle Attributes --------------------------------- */
+    async getPriceFeedUSD(_token, _chainId) {
+        const priceFeed = await this.localData.getOraclePriceFeedAddress(
+            _token,
+            'USD',
+            _chainId
+        );
+        return priceFeed;
+    }
+    async getPriceFeedDeviation(_token, _chainId) {
+        const priceFeed = await this.localData.getOraclePriceFeedDeviation(
+            _token,
+            'USD',
+            _chainId
+        );
+        return priceFeed;
+    }
 }
 
 module.exports = {

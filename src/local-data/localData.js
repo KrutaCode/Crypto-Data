@@ -214,13 +214,21 @@ class LocalData {
      * @param _chainId Id of the blockchain network.
      * @returns String
      */
-    async getOraclePriceFeed(_symbol0, _symbol1, _chainId) {
+    async getOraclePriceFeedAddress(_symbol0, _symbol1, _chainId) {
         const networkName = await this.utils.getNetworkName(_chainId);
         const pathToOracle = `${process.env.BASE_PATH}/network-data/${networkName}/oracles/chainlink/price-feeds/chainlink_${networkName}_price_feeds.json`;
         let jsonData = await readFile(pathToOracle);
         //console.log(`JSON: ${JSON.stringify(jsonData, null, 2)}`);
         jsonData = await JSON.parse(jsonData);
-        return jsonData[_symbol0][_symbol1];
+        return jsonData[_symbol0][_symbol1].address;
+    }
+    async getOraclePriceFeedDeviation(_symbol0, _symbol1, _chainId) {
+        const networkName = await this.utils.getNetworkName(_chainId);
+        const pathToOracle = `${process.env.BASE_PATH}/network-data/${networkName}/oracles/chainlink/price-feeds/chainlink_${networkName}_price_feeds.json`;
+        let jsonData = await readFile(pathToOracle);
+        //console.log(`JSON: ${JSON.stringify(jsonData, null, 2)}`);
+        jsonData = await JSON.parse(jsonData);
+        return jsonData[_symbol0][_symbol1].deviation;
     }
     /**---------------------------------- Pool Utilities ----------------------------------*/
     /**
